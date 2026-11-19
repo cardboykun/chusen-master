@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<title>マイ抽選｜応募予定・結果を記録して当選率をチェック｜抽選マスターくん</title>
+<meta name="description" content="応募したいポケカ抽選を「マイ抽選」に追加して、締切・応募済み・当選／落選をまとめて管理。登録不要・無料で、記録はお使いのブラウザの中だけに保存されます。">
+<link rel="canonical" href="https://chusen-master.com/my.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="マイ抽選｜応募予定と当選率を記録｜抽選マスターくん">
+<meta property="og:url" content="https://chusen-master.com/my.html">
+<meta property="og:site_name" content="抽選マスターくん">
+<meta property="og:image" content="https://chusen-master.com/images/ogp/lotteries.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Outfit:wght@600;800&display=swap">
+<link rel="stylesheet" href="assets/style.css?v=098f54cf">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYYTECGVBV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TYYTECGVBV');
+</script>
+<meta name="google-adsense-account" content="ca-pub-4423151056302895">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4423151056302895" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap head-inner">
+    <a class="logo" href="./"><span class="logo-mark">抽</span><span class="logo-text">抽選マスターくん</span></a>
+    <nav class="header-nav"><a href="./">ホーム</a><a href="lotteries.html">抽選一覧</a><a href="calendar.html">カレンダー</a><a href="others.html">その他</a><a href="articles/">記事</a><a href="my.html" aria-current="page">マイ抽選</a></nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <p class="crumbs"><a href="./">ホーム</a> › マイ抽選</p>
+    <h1 class="page-title">マイ抽選</h1>
+    <p class="page-lead">応募したい抽選を追加して、締切・応募済み・当選／落選をまとめて管理できます。登録不要・無料です。</p>
+  </div>
+
+  <section id="my-intro" class="my-intro">
+    <h2>使い方</h2>
+    <ol>
+      <li><a href="lotteries.html">抽選一覧</a>やお店・商品のページで、抽選カードの「<b>＋ マイ抽選に追加</b>」を押す</li>
+      <li>応募したら「<b>応募した</b>」、結果が出たら「<b>当選</b>」か「<b>落選</b>」を押す</li>
+      <li>締切が近い順に並ぶので、応募のし忘れを防げます。当選率も自動で計算します</li>
+    </ol>
+    <p><a class="btn" href="lotteries.html">受付中の抽選を見る →</a></p>
+  </section>
+
+  <section id="my-main" hidden>
+    <div class="my-stats" id="my-stats"></div>
+    <div class="seg my-tabs" role="tablist" aria-label="表示する抽選">
+      <button type="button" data-tab="plan" aria-pressed="true">応募予定 <span></span></button>
+      <button type="button" data-tab="applied" aria-pressed="false">結果待ち <span></span></button>
+      <button type="button" data-tab="won" aria-pressed="false">当選 <span></span></button>
+      <button type="button" data-tab="lost" aria-pressed="false">落選 <span></span></button>
+    </div>
+    <ol id="my-list" class="list my-list"></ol>
+  </section>
+
+  <section class="block my-backup">
+    <details>
+      <summary>別のスマホ・パソコンに引き継ぐ</summary>
+      <p>マイ抽選の記録は、<b>このブラウザの中だけ</b>に保存されています（サーバーには送っていません）。機種変更のときや、別の端末でも見たいときは、下の「引き継ぎコード」をコピーして、別の端末のこのページに貼り付けてください。</p>
+      <p><button type="button" class="btn-sub" id="my-export">引き継ぎコードをコピー</button></p>
+      <label for="my-import-text">引き継ぎコードを貼り付け</label>
+      <textarea id="my-import-text" rows="3" placeholder="CM1: から始まるコード"></textarea>
+      <p><button type="button" class="btn-sub" id="my-import">読み込む（今の記録に追加）</button></p>
+      <p class="my-note">※ブラウザの履歴・サイトデータを消すと、マイ抽選の記録も消えます。<br>※抽選の日程や条件は変わることがあります。応募前に必ずお店の公式情報をご確認ください。</p>
+    </details>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav><a href="./">ホーム</a><a href="lotteries.html">抽選一覧</a><a href="calendar.html">締切カレンダー</a><a href="stores/">お店から探す</a><a href="my.html">マイ抽選</a><a href="others.html">その他の抽選・販売</a><a href="articles/">ポケモン関連記事</a><a href="about.html">運営者情報</a><a href="privacy.html">プライバシーポリシー</a><a href="disclaimer.html">免責事項</a><a href="https://x.com/chusen_master" target="_blank" rel="noopener">X（@chusen_master）</a><a href="en/pokemon-card-shops-japan.html" hreflang="en" lang="en">English</a></nav>
+    <p>当サイトは非公式のファンサイトで、株式会社ポケモン・任天堂・各販売店とは関係ありません。ポケモン・ポケットモンスター・Pokémonは任天堂・クリーチャーズ・ゲームフリークの登録商標です。</p>
+  </div>
+</footer>
+
+<script src="data/lotteries.js?v=d387e977"></script>
+<script src="data/pages.js?v=4954c0e6"></script>
+<script src="assets/core.js?v=1a7f2095"></script>
+<script src="assets/my.js?v=cdfb6fed"></script>
+</body>
+</html>

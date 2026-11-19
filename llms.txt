@@ -1,0 +1,11 @@
+# Chusen Master (抽選マスターくん)
+
+> An unofficial Japanese fan site that tracks Pokémon card lottery (raffle) sales at Japanese retailers, with an English guide to card shops in Japan for visitors.
+
+## English
+- [Where to Buy Pokémon Cards in Japan: Card Shops in Akihabara, Yokohama & Sapporo](https://chusen-master.com/en/pokemon-card-shops-japan.html): 14 trading card shops with address, nearest station, hours, payment, tax-free status and Google rating; how booster box lotteries and secondary-market prices work in Japan; tax-free refund rules from November 2026.
+
+## Japanese
+- [抽選マスターくん（トップ）](https://chusen-master.com/): ポケモンカードの抽選販売情報を締切順にまとめたページ
+- [抽選一覧](https://chusen-master.com/lotteries.html)
+- [札幌・横浜・秋葉原のおすすめカードショップ](https://chusen-master.com/card-shop-guide.html)

@@ -1,0 +1,6 @@
+# 手元だけに置くもの（GitHub・サイトには出さない）
+CLAUDE.md
+UPDATE.md
+tools/
+.claude/
+__pycache__/
