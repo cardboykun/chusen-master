@@ -20,6 +20,8 @@ window.PRODUCTS = [
     keys: ["スターターセットex"], article: "starter-set-ex-2026", colors: ["#9f1239", "#fb7185"] },
   { slug: "start-deck-100-battle-collection", name: "スタートデッキ100 バトルコレクション", kind: "デッキ", release: "2025-12-19", price: null,
     keys: ["スタートデッキ100 バトルコレクション"], article: "start-deck-100-battle-collection", colors: ["#7f1d1d", "#ef4444"] },
+  { slug: "card-illust-figure-30th", name: "カードイラストフィギュアコレクション 30th", kind: "フィギュア", release: "2026-11-27", price: "1,800円",
+    keys: ["カードイラストフィギュアコレクション 30th CELEBRATION"], article: "card-illust-figure-30th", colors: ["#134e4a", "#facc15"] },
   { slug: "mega-brave", name: "メガブレイブ", kind: "拡張パック", release: null, price: null,
     keys: ["メガブレイブ"], article: null, colors: ["#1f2937", "#eab308"] },
   { slug: "mega-symphonia", name: "メガシンフォニア", kind: "拡張パック", release: null, price: null,

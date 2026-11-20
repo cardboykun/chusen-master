@@ -4,8 +4,170 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-19T20:20:00+09:00";
+window.SITE_UPDATED = "2026-11-20T15:00:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "pokecen-online-20261127",
+    "store": "ポケモンセンターオンライン",
+    "products": [
+      "カードイラストフィギュアコレクション 30th CELEBRATION"
+    ],
+    "method": "web",
+    "start": "2026-11-27T16:00:00+09:00",
+    "end": "2026-11-30T16:59:00+09:00",
+    "requirement": "会員登録が必要。プレイヤーズクラブでマイナンバーカードの本人認証を済ませた人の枠が当選の大半（未認証の人は電話番号認証で別枠に応募可）。1人1回。当選発表は12月4日15時以降、購入は12月4日15時〜12月8日16時59分",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [],
+    "url": "https://www.pokemoncenter-online.com/news/?id=20261120",
+    "verified": true
+  },
+  {
+    "id": "geo-20261130",
+    "store": "ゲオ",
+    "products": [
+      "ハドウシーカー",
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "web",
+    "start": "2026-11-30T11:00:00+09:00",
+    "end": "2026-12-03T17:59:00+09:00",
+    "requirement": "ゲオ抽選販売専用サイトからGEO IDでログインして応募。レンタル機能付きPontaカードとゲオアプリの連携が必要で、購入時に本人確認書類の提示あり。1人1点1回まで。ハドウシーカーはBOX回収・パックのみのお渡し、30th カードセットは9種まとめての販売",
+    "conditions": [
+      "会員登録",
+      "アプリ",
+      "本人確認"
+    ],
+    "forms": [
+      "pack",
+      "set"
+    ],
+    "url": "https://geo-online.co.jp/news/792",
+    "verified": true
+  },
+  {
+    "id": "shibuyatsutaya-20261120",
+    "store": "SHIBUYA TSUTAYA（POKÉMON CARD LOUNGE）",
+    "products": [
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": "2026-11-20T10:00:00+09:00",
+    "end": "2026-11-22T23:59:00+09:00",
+    "requirement": "CLOUD PASSから受取日と数量（1〜2BOX）を選んで応募。当選発表は12/1 18時以降、受け取りは12/8〜12/13に5階のカードラウンジで。顔写真付き本人確認書類が必要、支払いはキャッシュレスのみ",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": ["box_shrink"],
+    "url": "https://cloud-pass.jp/pr/d5111f868ba8f555add7ef4d8c943ffd19273ae3a622a02861f04cf1c0db1e55",
+    "verified": true
+  },
+  {
+    "id": "fullcomp-20261120",
+    "store": "フルコンプ",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-20T10:30:00+09:00",
+    "end": "2026-11-22T23:59:00+09:00",
+    "requirement": "LivePocketで応募（無料の会員登録とプレイヤーズクラブのプレイヤーID入力が必要）。対象は八王子本店・新宿南口店・大阪日本橋店など9店舗から1店を選んで1人1回。1人1BOXまで。購入時はマイナンバーカードが必要で、当選した店舗で11/27〜11/29に受け取り。",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": ["box_shrink"],
+    "url": "https://livepocket.jp/e/xovyf",
+    "verified": true
+  },
+  {
+    "id": "trecapi-toyota-20261120",
+    "store": "トレカキャピタル豊田本店",
+    "products": [
+      "オープン記念抽選（全35種）"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "オープン記念の抽選販売で、対象は全35種。応募は店の公式Xの返信欄にある応募URLから。当選発表は12/3（オープン前日）。応募前に注意事項を確認。",
+    "conditions": null,
+    "forms": [],
+    "url": "https://x.com/Trecapi_toyohon/status/2123604747403813285",
+    "verified": true
+  },
+  {
+    "id": "girafull-20261120",
+    "store": "GIRAFULL 各店",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-20T12:00:00+09:00",
+    "end": "2026-11-22T23:59:00+09:00",
+    "requirement": "なんば・オタロード・京都・広島・名古屋大須の5店舗で、LivePocketの会員登録が必要。応募は1人1回まで、当選すると1BOX（6,000円）を11/27〜11/29に応募した店の店頭で購入。購入時に顔写真付きの身分証が必要。結果は11/24までに通知。",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [],
+    "url": "https://livepocket.jp/p/puf0p",
+    "verified": true
+  },
+  {
+    "id": "itoyokado-20261120",
+    "store": "イトーヨーカドー・アリオ（一部店舗・店頭QR）",
+    "products": [
+      "30th CELEBRATION BOX"
+    ],
+    "method": "store",
+    "start": "2026-11-20T00:00:00+09:00",
+    "end": "2026-11-22T23:59:00+09:00",
+    "requirement": "対象店舗の店頭に掲示されたQRコードから応募（LivePocket）。結果はLivePocketで確認（店頭での問い合わせ不可）。販売は12/11〜12/13の予定。対象店舗・対象商品は各店の掲示で確認",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "gameark-takarajima-20261120",
+    "store": "ゲームアーク・宝島 各店（モバイル会員限定）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-20T10:00:00+09:00",
+    "end": "2026-11-24T23:59:00+09:00",
+    "requirement": "モバイル会員ページのメニュー「抽選申込み」から応募。当選発表は11/25、購入は11/27〜11/28",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "trecachampion-20261116",
+    "store": "トレカチャンピオン 各店（X・DM抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "x",
+    "start": "2026-11-16T00:00:00+09:00",
+    "end": "2026-11-22T23:59:00+09:00",
+    "requirement": "店舗会員限定。各店の公式XにDMで会員番号・氏名・希望商品を送って応募。当選者のみ11/25に連絡、1人1BOX・店頭で現金払い",
+    "conditions": [
+      "会員登録",
+      "SNS"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
   {
     "id": "suruga-yokohama-20261119",
     "store": "駿河屋 横浜店（X抽選）",
@@ -246,14 +408,14 @@ window.LOTTERIES = [
   },
   {
     "id": "hobbyoff-20261116",
-    "store": "ホビーオフ 甲府国母店",
+    "store": "ホビーオフ（一部店舗）",
     "products": [
       "ハドウシーカー"
     ],
     "method": "store",
     "start": "2026-11-16T11:00:00+09:00",
-    "end": null,
-    "requirement": "店頭のQRコードから応募・締切は11/22（日）の閉店時間",
+    "end": "2026-11-22T19:30:00+09:00",
+    "requirement": "対象店舗の店頭のQRコードから応募・1人1回・当選発表は11/25 15時以降・当選者は11/27〜28に本人確認書類を持って来店（リンク先は甲府国母店の告知）",
     "conditions": null,
     "forms": [],
     "url": "https://x.com/Hbkokubotoreca/status/2122151320077676920",
@@ -267,8 +429,8 @@ window.LOTTERIES = [
     ],
     "method": "web",
     "start": "2026-11-19T17:00:00+09:00",
-    "end": null,
-    "requirement": "2025/11/1〜2026/11/16 に1円以上の商品を注文・受取済み。過去の当選者は対象外",
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "2025/11/1〜2026/11/16 に1円以上の商品を注文・受取済み。過去の当選者は対象外・当選者のみ12/8 19時までにメール・支払いはセブン-イレブン店頭",
     "conditions": [
       "会員登録",
       "購入実績"
