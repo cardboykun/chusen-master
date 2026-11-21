@@ -4,8 +4,32 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-20T15:00:00+09:00";
+window.SITE_UPDATED = "2026-11-21T10:40:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "kiddyland-fujimi-20261121",
+    "store": "キデイランド ららぽーと富士見店",
+    "products": [
+      "ストームエメラルダ",
+      "30th CELEBRATION BOX",
+      "スペシャルデッキセットMEGA",
+      "スターターセットex"
+    ],
+    "method": "web",
+    "start": "2026-11-21T10:00:00+09:00",
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "LivePocket（無料の会員登録）で商品ごとに1人1回応募。当選発表は11月27日18時ごろメールで、購入は11月28日〜30日に店頭レジで。受け取り時に本人確認書類が必要で、代理購入は不可。ストームエメラルダと30thは1BOX限定でシュリンクを外して販売。スペシャルデッキセットMEGA、スターターセットex（イーブイ／ゾロア＆ゾロアーク／ニャオハ＆マスカーニャ）は各1点まで",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink",
+      "set"
+    ],
+    "url": "https://livepocket.jp/p/hpmzs",
+    "verified": true
+  },
   {
     "id": "pokecen-online-20261127",
     "store": "ポケモンセンターオンライン",
