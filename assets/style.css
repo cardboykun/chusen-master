@@ -408,3 +408,29 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .shop dd{margin:0;overflow-wrap:anywhere}
 .shop .rating{font-family:var(--font-num);font-weight:800}
 @media (max-width:560px){.shop dl{grid-template-columns:1fr;gap:0}.shop dt{margin-top:8px}}
+
+/* ---------- ホーム画面に追加（assets/pwa.js） ---------- */
+.pwa-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:0 0 16px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,.12)}
+.pwa-foot span{color:rgba(255,255,255,.7);font-size:.8rem}
+.pwa-btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:800;font-size:.9rem;color:var(--navy);background:#fff;border:0;border-radius:999px;padding:8px 18px 8px 10px;cursor:pointer;font-family:var(--font-head)}
+.pwa-btn img{border-radius:6px}
+.pwa-btn:hover{filter:brightness(.95)}
+button.quick-card{font:inherit;color:inherit;text-align:left;cursor:pointer;width:100%}
+.pwa-modal{position:fixed;inset:0;z-index:1000;background:rgba(5,8,20,.6);display:flex;align-items:flex-end;justify-content:center;padding:16px;animation:pwa-fade .15s ease}
+@media (min-width:600px){.pwa-modal{align-items:center}}
+.pwa-sheet{position:relative;width:100%;max-width:440px;max-height:calc(100vh - 32px);overflow:auto;background:var(--surface);color:var(--text);border-radius:20px;padding:22px 20px 18px;box-shadow:0 20px 60px -20px rgba(0,0,0,.6)}
+.pwa-sheet::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;border-radius:20px 20px 0 0;background:var(--holo)}
+.pwa-close{position:absolute;top:10px;right:12px;width:36px;height:36px;border:0;border-radius:50%;background:var(--chip);color:var(--text);font-size:1.3rem;line-height:1;cursor:pointer}
+.pwa-head{display:flex;gap:12px;align-items:center;margin-bottom:12px;padding-right:36px}
+.pwa-head img{border-radius:12px;flex:none}
+.pwa-k{margin:0;font-size:.75rem;font-weight:700;color:var(--muted)}
+.pwa-head h2{margin:2px 0 0;font-family:var(--font-head);font-size:1.1rem;line-height:1.35}
+.pwa-steps{margin:0;padding:0;list-style:none;counter-reset:s}
+.pwa-steps li{counter-increment:s;position:relative;padding:10px 0 10px 40px;border-top:1px dashed var(--line);line-height:1.6;font-size:.95rem}
+.pwa-steps li:first-child{border-top:0}
+.pwa-steps li::before{content:counter(s);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;display:grid;place-items:center;font-family:var(--font-num)}
+.pwa-ico{width:1.25em;height:1.25em;vertical-align:-.25em;color:#0a84ff}
+.pwa-key{display:inline-block;min-width:1.2em;text-align:center}
+.pwa-go{display:block;text-align:center;margin:10px 0 4px;padding:11px;border-radius:999px;background:var(--accent);color:#fff;font-weight:800;text-decoration:none}
+.pwa-note{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:.85rem;line-height:1.6}
+@keyframes pwa-fade{from{opacity:0}to{opacity:1}}
