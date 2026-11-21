@@ -7,6 +7,55 @@
 window.SITE_UPDATED = "2026-11-21T12:40:00+09:00";
 window.LOTTERIES = [
   {
+    "id": "biccamera-okayama-20261122",
+    "store": "ビックカメラ 岡山駅前店",
+    "products": [
+      "30th CELEBRATION BOX"
+    ],
+    "method": "store",
+    "start": "2026-11-22T00:00:00+09:00",
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "岡山駅前店の抽選（11/22〜11/23）。応募方法・受付時間はお店の案内で確認が必要。当選発表は12/4、購入は12/5〜12/6の予定",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "biccamera-kanagawa-20261123",
+    "store": "ビックカメラ 各店（藤沢・相模大野駅・新横浜・ラゾーナ川崎）",
+    "products": [
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "store",
+    "start": "2026-11-23T00:00:00+09:00",
+    "end": "2026-11-24T23:59:00+09:00",
+    "requirement": "藤沢店・相模大野駅店・新横浜店・ラゾーナ川崎店の抽選（11/23〜11/24）。応募方法・受付時間はお店の案内で確認が必要。当選発表は11/28 13時から、購入は11/29〜11/30の予定",
+    "conditions": null,
+    "forms": [
+      "set"
+    ],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "toycomp-20261120",
+    "store": "トイコンプ",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "トイコンプの会員サイトから応募。当選発表は11/24の予定、購入は11/27〜11/29",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [],
+    "url": "https://toycomp.membercard.jp/",
+    "verified": false
+  },
+  {
     "id": "seagull-20261121",
     "store": "シーガル（アプリ抽選）",
     "products": [
