@@ -4,8 +4,26 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-21T12:40:00+09:00";
+window.SITE_UPDATED = "2026-11-21T16:20:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "joshin-store-20261124",
+    "store": "Joshin（店頭・アプリ必須）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "store",
+    "start": "2026-11-24T00:00:00+09:00",
+    "end": "2026-11-26T23:59:00+09:00",
+    "requirement": "ジョーシンの店頭で応募する抽選で、ジョーシンアプリが必要（11/24〜11/26）。当選発表は11/27から、購入は11/27〜11/29の予定。対象店舗・受付時間はお店の案内で確認してください",
+    "conditions": [
+      "アプリ",
+      "会員登録"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
   {
     "id": "biccamera-okayama-20261122",
     "store": "ビックカメラ 岡山駅前店",
