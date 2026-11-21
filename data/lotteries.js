@@ -4,7 +4,7 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-21T10:40:00+09:00";
+window.SITE_UPDATED = "2026-11-21T12:40:00+09:00";
 window.LOTTERIES = [
   {
     "id": "kiddyland-fujimi-20261121",
@@ -114,12 +114,15 @@ window.LOTTERIES = [
       "オープン記念抽選（全35種）"
     ],
     "method": "web",
-    "start": null,
+    "start": "2026-11-20T10:00:00+09:00",
     "end": "2026-11-23T23:59:00+09:00",
-    "requirement": "オープン記念の抽選販売で、対象は全35種。応募は店の公式Xの返信欄にある応募URLから。当選発表は12/3（オープン前日）。応募前に注意事項を確認。",
-    "conditions": null,
-    "forms": [],
-    "url": "https://x.com/Trecapi_toyohon/status/2123604747403813285",
+    "requirement": "オープン記念の抽選販売で、対象は全35種。エディオンの各種会員（クレジットカード・あんしん保証・ID・アプリ）限定で、携帯電話番号にSMSで届く受付コードを使って応募。1人1回・電話番号1つにつき1回。当選者だけに12/3にSMSで連絡、購入は12/4〜12/7に本人が来店（会員証と当選SMSを提示、身分証の確認あり）。ポケカのBOXはシュリンクを外して販売",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": ["box_noshrink"],
+    "url": "https://edion-cp.com/trecapiopen1204",
     "verified": true
   },
   {
@@ -153,6 +156,21 @@ window.LOTTERIES = [
     "conditions": [
       "会員登録"
     ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "hmv-20261120",
+    "store": "HMV トレカショップ各店（店頭QR）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "store",
+    "start": "2026-11-20T13:00:00+09:00",
+    "end": "2026-11-22T20:59:00+09:00",
+    "requirement": "対象店舗の店頭に掲示されたQRコードから応募。当選発表は11/25の予定。対象店舗や購入の条件は各店の掲示で確認",
+    "conditions": null,
     "forms": [],
     "url": null,
     "verified": false
