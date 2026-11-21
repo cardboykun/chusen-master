@@ -47,7 +47,7 @@
     $("#stat-upcoming").textContent = upcoming.length;
 
     $("#today").hidden = !today.length;
-    $("#today-list").innerHTML = today.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${esc(l.store)}</a><span>${fmt(l.end).split(" ")[1]} まで</span><b>${left(l.end, now)}</b></li>`).join("");
+    $("#today-list").innerHTML = today.map((l) => `<li>${l.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener nofollow">` : `<a href="lotteries.html">`}${esc(l.store)}</a><span>${fmt(l.end).split(" ")[1]} まで</span><b>${left(l.end, now)}</b></li>`).join("");
 
     const tiles = allProducts(now).map((p) => tile(p, now));
     tiles.sort((a, b) => (b.active > 0) - (a.active > 0));

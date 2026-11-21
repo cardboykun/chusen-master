@@ -7,6 +7,23 @@
 window.SITE_UPDATED = "2026-11-21T12:40:00+09:00";
 window.LOTTERIES = [
   {
+    "id": "seagull-20261121",
+    "store": "シーガル（アプリ抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "app",
+    "start": null,
+    "end": "2026-11-23T20:00:00+09:00",
+    "requirement": "シーガルのアプリから応募する抽選。応募できる店舗・応募条件・受け取り方法は、アプリ内のお店の案内で確認してください",
+    "conditions": [
+      "アプリ"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
     "id": "kiddyland-fujimi-20261121",
     "store": "キデイランド ららぽーと富士見店",
     "products": [
@@ -85,7 +102,9 @@ window.LOTTERIES = [
       "会員登録",
       "本人確認"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://cloud-pass.jp/pr/d5111f868ba8f555add7ef4d8c943ffd19273ae3a622a02861f04cf1c0db1e55",
     "verified": true
   },
@@ -103,7 +122,9 @@ window.LOTTERIES = [
       "会員登録",
       "本人確認"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://livepocket.jp/e/xovyf",
     "verified": true
   },
@@ -121,7 +142,9 @@ window.LOTTERIES = [
       "会員登録",
       "本人確認"
     ],
-    "forms": ["box_noshrink"],
+    "forms": [
+      "box_noshrink"
+    ],
     "url": "https://edion-cp.com/trecapiopen1204",
     "verified": true
   },
@@ -258,7 +281,9 @@ window.LOTTERIES = [
     "conditions": [
       "アプリ"
     ],
-    "forms": ["pack"],
+    "forms": [
+      "pack"
+    ],
     "url": "https://shop.pokemon.co.jp/ja/shop/pokemoncenter-tokyodx/news/202611/000718.html",
     "verified": true
   },
@@ -294,7 +319,9 @@ window.LOTTERIES = [
     "conditions": [
       "会員登録"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://docs.google.com/forms/d/e/1FAIpQLSeNdQItGyUMs7dhwBfG_MXHz3ytkmwhOmev9BPbJHIjDAjnBQ/viewform",
     "verified": true
   },
@@ -312,7 +339,9 @@ window.LOTTERIES = [
       "会員登録",
       "本人確認"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://livepocket.jp/e/wfku9",
     "verified": true
   },
@@ -331,7 +360,9 @@ window.LOTTERIES = [
       "アプリ",
       "本人確認"
     ],
-    "forms": ["box_noshrink"],
+    "forms": [
+      "box_noshrink"
+    ],
     "url": "https://www.furu1.net/news/news_information/pkop20261127sl",
     "verified": true
   },
@@ -391,7 +422,10 @@ window.LOTTERIES = [
     "conditions": [
       "会員登録"
     ],
-    "forms": ["box_noshrink", "box_noperi"],
+    "forms": [
+      "box_noshrink",
+      "box_noperi"
+    ],
     "url": "https://x.com/ryuunoshippo_4/status/2121951602198093902",
     "verified": true
   },
@@ -477,7 +511,9 @@ window.LOTTERIES = [
       "会員登録",
       "購入実績"
     ],
-    "forms": ["set"],
+    "forms": [
+      "set"
+    ],
     "url": "https://x.com/7_netshopping/status/2122570434755633464",
     "verified": true
   },
@@ -497,7 +533,9 @@ window.LOTTERIES = [
       "会員登録",
       "本人確認"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://www.pokemoncenter-online.com/news/?id=20260929",
     "verified": true,
     "tentative": true
@@ -640,7 +678,9 @@ window.LOTTERIES = [
       "購入実績",
       "その他"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://joshinweb.jp/toy/c_chusen.html",
     "verified": false
   },
@@ -661,7 +701,9 @@ window.LOTTERIES = [
     "conditions": [
       "会員登録"
     ],
-    "forms": ["box_shrink"],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://www.amazon.co.jp/dp/B0H4PQ6LR5",
     "verified": true
   }
