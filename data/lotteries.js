@@ -246,7 +246,9 @@ window.LOTTERIES = [
     "conditions": [
       "会員登録"
     ],
-    "forms": [],
+    "forms": [
+      "box_shrink"
+    ],
     "url": null,
     "verified": false
   },
@@ -331,7 +333,9 @@ window.LOTTERIES = [
       "会員登録",
       "SNS"
     ],
-    "forms": [],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://www.gangi.co.jp/blog/drawsale-720",
     "verified": true
   },
@@ -527,7 +531,9 @@ window.LOTTERIES = [
       "会員登録",
       "SNS"
     ],
-    "forms": [],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://www.suruga-ya.jp/blog/?q=pokeka_chusen261105.html",
     "verified": true
   },
@@ -639,7 +645,9 @@ window.LOTTERIES = [
       "会員登録",
       "購入実績"
     ],
-    "forms": [],
+    "forms": [
+      "box_shrink"
+    ],
     "url": "https://docs.google.com/forms/d/e/1FAIpQLScmxaZTyfeXhYnHVW4L9ZuqAgTeLoycN0Nk2XSHDn_tXDrwPA/viewform",
     "verified": true
   },
