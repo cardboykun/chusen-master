@@ -440,3 +440,4 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
  .shr-bar{bottom:52px;width:calc(100% - 20px);flex-wrap:wrap;justify-content:center;overflow:visible}
  .shr-bar a,.shr-bar button{flex:1 1 auto;padding:0 10px}.shr-bar .shr-x{flex:none}}
 @media print{.shr-fab,.shr-bar{display:none}}
+.aff-amazon .btn{background:#e47911}
