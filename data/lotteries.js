@@ -4,8 +4,28 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-21T16:20:00+09:00";
+window.SITE_UPDATED = "2026-11-23T09:20:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "joshin-app-20261123",
+    "store": "Joshin キッズランド（店頭・アプリのクーポン）",
+    "products": [
+      "ストームエメラルダ"
+    ],
+    "method": "store",
+    "start": "2026-11-23T00:00:00+09:00",
+    "end": "2026-11-23T23:59:00+09:00",
+    "requirement": "抽選ではなく、ジョーシンアプリのクーポン（キッズランドの欄）に出る購入券で店頭で買える販売（11/23の1日だけ）。1人10パックまで・売り切れ次第終了・扱いのない店舗もあり。詳しくはアプリ内のお店の案内で確認してください",
+    "conditions": [
+      "アプリ",
+      "会員登録"
+    ],
+    "forms": [
+      "pack"
+    ],
+    "url": null,
+    "verified": false
+  },
   {
     "id": "joshin-store-20261124",
     "store": "Joshin（店頭・アプリ必須）",
