@@ -4,7 +4,7 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-23T12:30:00+09:00";
+window.SITE_UPDATED = "2026-11-23T20:15:00+09:00";
 window.LOTTERIES = [
   {
     "id": "joshin-app-20261123",
@@ -403,6 +403,26 @@ window.LOTTERIES = [
     ],
     "forms": [],
     "url": "https://www.otakarasouko.com/information/109459977/",
+    "verified": true
+  },
+  {
+    "id": "trecaplaza55-20261123",
+    "store": "トレカプラザ55通販",
+    "products": [
+      "30th CELEBRATION カードセット",
+      "スターターセットex"
+    ],
+    "method": "web",
+    "start": "2026-11-23T20:00:00+09:00",
+    "end": "2026-11-30T23:59:00+09:00",
+    "requirement": "再入荷・キャンセル分の抽選。通販店の会員登録（会員番号の入力）が必要・1人1回・カードセット9種とスターターセットex3種から選んで応募・当選者だけ12/1〜12/2にメール連絡・12/4 23:59までに支払い",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfMYEQnQHZIXlZXRSR5pLb7glqN5fz9uBp-pVcEjKiMC4VfHg/viewform",
     "verified": true
   },
   {
