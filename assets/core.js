@@ -16,6 +16,15 @@
     const p = Object.fromEntries(new Intl.DateTimeFormat("ja-JP", { timeZone: TZ, month: "numeric", day: "numeric", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false }).formatToParts(new Date(iso)).map((x) => [x.type, x.value]));
     return `${p.month}/${p.day}(${p.weekday}) ${p.hour}:${p.minute}`;
   };
+  // 当選発表日：日付だけ（"2026-11-27"）なら「11/27(金)」、時刻つきなら「11/27(金) 18:00頃」（build_pages.fmt_result と同じ）
+  const fmtResult = (r) => {
+    if (!r) return "";
+    if (/^\d{4}-\d{2}-\d{2}$/.test(r)) {
+      const [y, m, d] = r.split("-").map(Number);
+      return `${m}/${d}(${"日月火水木金土"[new Date(Date.UTC(y, m - 1, d)).getUTCDay()]})`;
+    }
+    return `${fmt(r)}頃`;
+  };
   const fmtDate = (ymd) => { if (!ymd) return null; const [y, m, d] = ymd.split("-").map(Number); return `${y}年${m}月${d}日`; };
   const statusOf = (l, now = Date.now()) => {
     if (l.tentative && !l.start) return "upcoming";
@@ -58,6 +67,7 @@
       ? `<span class="label">受付開始</span><span class="date">${l.start ? fmt(l.start) : "日程未定"}</span>`
       : `<span class="label">締切</span><span class="date">${l.end ? fmt(l.end) : "未公表"}</span>${st === "open" && l.end ? `<span class="left">${left(l.end, now)}</span>` : ""}`;
     const period = l.start || l.end ? `<span class="badge">${l.start ? fmt(l.start) : "?"} 〜 ${l.end ? fmt(l.end) : "未公表"}</span>` : "";
+    const resultBadge = l.result ? `<span class="badge result">当選発表 ${esc(fmtResult(l.result))}</span>` : "";
     const c = l.conditions;
     const condBadge = c == null ? `<span class="badge muted">抽選条件：不明</span>`
       : c.length === 0 ? `<span class="badge cond-none">条件なし</span>`
@@ -70,7 +80,7 @@
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
         <p class="req">${esc(l.requirement)}</p>${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
-        <div class="meta">${condBadge}${formBadge}${period}</div>
+        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}</div>
       </div>
       <div class="deadline">${dl}</div>
       <div class="card-foot">${l.url ? `<a class="go" href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${l.verified === false ? "お店のページを見る →" : "公式の応募ページ・告知を見る →"}</a>` : ""}${st !== "closed" ? myButton(l.id) : ""}</div>
