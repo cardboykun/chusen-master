@@ -79,7 +79,7 @@
         <div class="card-top">${opts.isNew ? `<span class="badge new">NEW</span>` : ""}<span class="badge ${st}">${stLabel}</span><span class="badge method">${METHOD[l.method] || esc(l.method)}</span>${l.verified === false ? `<span class="badge unverified" title="応募前に必ずお店の公式情報をご確認ください。">公式未確認</span>` : ""}</div>
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
-        <p class="req">${esc(l.requirement)}</p>${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
+        <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
         <div class="meta">${condBadge}${formBadge}${period}${resultBadge}</div>
       </div>
       <div class="deadline">${dl}</div>
