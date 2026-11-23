@@ -4,7 +4,7 @@
 // verified: お店の公式ページで日程を確認済みなら true。false は「公式未確認」と表示される
 // conditions: 応募条件。[] = 条件なし、null = 不明。値は 会員登録 / アプリ / 購入実績 / 本人確認 / SNS / その他
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-23T09:20:00+09:00";
+window.SITE_UPDATED = "2026-11-23T12:05:00+09:00";
 window.LOTTERIES = [
   {
     "id": "joshin-app-20261123",
@@ -722,6 +722,23 @@ window.LOTTERIES = [
     ],
     "forms": [],
     "url": "https://lifetunes-mall.jp/shop/form/form.aspx?questionnaire=c3060_pokemoncard100_lot",
+    "verified": false
+  },
+  {
+    "id": "trecastation-20261123",
+    "store": "トレカステーション（一部店舗）",
+    "products": [
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "store",
+    "start": null,
+    "end": "2026-11-29T23:59:00+09:00",
+    "requirement": "一部の店舗で受付中の抽選（9種セット）・当選発表は12/1予定・当選した店舗で12/4〜6に購入。対象店舗と応募方法はお店でご確認ください",
+    "conditions": null,
+    "forms": [
+      "set"
+    ],
+    "url": null,
     "verified": false
   },
   {
