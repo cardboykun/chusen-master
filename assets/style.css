@@ -480,3 +480,6 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
  .shr-bar a,.shr-bar button{flex:1 1 auto;padding:0 10px}.shr-bar .shr-x{flex:none}}
 @media print{.shr-fab,.shr-bar{display:none}}
 .aff-amazon .btn{background:#e47911}
+.faq details{margin:0 0 8px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.faq summary{font-weight:800;cursor:pointer}
+.faq details p{margin:8px 0 0;font-size:.92rem}
