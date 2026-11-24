@@ -241,7 +241,7 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .author-box .author-mark{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff6fb1,#7c8cff 50%,#3fd6c6)}
 .author-box .author-label{margin:0;font-size:.75rem;font-weight:800;color:var(--accent)}
 .author-box .author-name{margin:2px 0 6px;font-weight:800}
-.author-box ul{margin:0;padding-left:1.2em;font-size:.9rem}
+.author-box p.author-text{margin:0;font-size:.9rem;line-height:1.8}
 .author-box p.author-more{margin:6px 0 0;font-size:.9rem}
 .point{background:var(--warn-soft);border-left:4px solid var(--warn);border-radius:8px;padding:8px 14px;margin:14px 0;font-size:.92rem}
 .toc{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:4px 16px 8px;margin:16px 0}
