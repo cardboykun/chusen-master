@@ -170,6 +170,22 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .card .go{grid-column:1/-1;justify-self:start;margin-top:6px;font-size:.9rem;font-weight:800;color:var(--accent);text-decoration:none}
 .card .go:hover{text-decoration:underline}
 .card.is-closed{opacity:.6}
+/* 抽選カードを横に並べる（PCは3列・タブレットは2列・スマホは1列）。並べるときは締切を上に出す */
+.list:not(.my-list){grid-template-columns:repeat(auto-fill,minmax(290px,1fr));align-items:stretch}
+.list:not(.my-list)>.card{display:flex;flex-direction:column;gap:6px;padding:14px 16px 12px 20px}
+.list:not(.my-list)>.card .deadline{order:-1;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;text-align:left;white-space:normal;padding-bottom:8px;border-bottom:1px dashed var(--line)}
+.list:not(.my-list)>.card .deadline .label{display:inline}
+.list:not(.my-list)>.card .deadline .left{margin-top:0}
+.list:not(.my-list)>.card .card-foot{margin-top:auto;padding-top:6px}
+.list:not(.my-list)>.card .card-foot .go{flex:1 1 100%}
+.list:not(.my-list)>.card .my-btn{margin-left:0}
+.list:not(.my-list)>.empty{grid-column:1/-1}
+/* 記事：見出しの箱と本文の箱。商品記事はあいだに抽選一覧が入る。それ以外はひとつの箱に見せる */
+.article .article-head{margin-bottom:14px}
+.article .article-body{margin-top:0}
+.article:not(.has-lottery) .article-head{margin-bottom:0;padding-bottom:0;border-bottom:0;border-radius:var(--radius) var(--radius) 0 0;box-shadow:none}
+.article:not(.has-lottery) .article-body{border-top:0;border-radius:0 0 var(--radius) var(--radius)}
+.article.has-lottery .product-lottery{margin-bottom:20px}
 .empty{color:var(--muted);padding:18px;background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius)}
 
 /* ---------- Other lotteries ---------- */
