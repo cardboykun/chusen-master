@@ -59,6 +59,29 @@
     });
   }
 
+  // 「各店」の抽選の店舗ごとの応募先（build_pages.branches_html と同じ形）。締切の早い順、締切が過ぎた店は下に「終了」
+  // 一覧は1分ごとに描き直すので、開いた一覧を覚えておいて開いたままにする
+  const openBranches = new Set();
+  document.addEventListener("toggle", (e) => {
+    const d = e.target;
+    if (!(d instanceof HTMLDetailsElement) || !d.classList.contains("branches") || !d.dataset.id) return;
+    if (d.open) openBranches.add(d.dataset.id); else openBranches.delete(d.dataset.id);
+  }, true);
+  function branchesHtml(l, now = Date.now()) {
+    const bs = l.branches || [];
+    if (!bs.length) return "";
+    const done = (b) => !!(b.end && new Date(b.end) < now);
+    const key = (b) => [done(b) ? 1 : 0, b.end ? new Date(b.end).getTime() : 9e18];
+    const rows = [...bs].sort((a, b) => { const x = key(a), y = key(b); return x[0] - y[0] || x[1] - y[1]; }).map((b) => {
+      const nm = b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener nofollow">${esc(b.name)}</a>` : `<span>${esc(b.name)}</span>`;
+      return `<li${done(b) ? ' class="is-done"' : ""}>${nm}${b.how ? `<span class="br-how">${esc(b.how)}</span>` : ""}`
+        + `<span class="br-end">${done(b) ? "終了" : b.end ? `締切 ${fmt(b.end)}` : "締切は告知で確認"}</span></li>`;
+    }).join("");
+    const nOpen = bs.filter((b) => !done(b)).length;
+    return `<details class="branches" data-id="${esc(l.id)}"${openBranches.has(l.id) ? " open" : ""}><summary>店舗ごとの応募先（${bs.length}店${nOpen !== bs.length ? `・受付中 ${nOpen}店` : ""}）</summary><ul>${rows}</ul>`
+      + `<p class="br-note">店名を押すと、その店の公式の告知が開きます。</p></details>`;
+  }
+
   function card(l, now = Date.now(), opts = {}) {
     const st = statusOf(l, now);
     const stLabel = { open: "受付中", upcoming: l.tentative ? "予定" : "開始前", closed: "受付終了" }[st];
@@ -80,7 +103,7 @@
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
         <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
-        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}</div>
+        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}</div>${branchesHtml(l, now)}
       </div>
       <div class="deadline">${dl}</div>
       <div class="card-foot">${l.url ? `<a class="go" href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${l.verified === false ? "お店のページを見る →" : "公式の応募ページ・告知を見る →"}</a>` : ""}${st !== "closed" ? myButton(l.id) : ""}</div>

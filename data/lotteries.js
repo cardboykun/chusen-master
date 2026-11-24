@@ -141,7 +141,19 @@ window.LOTTERIES = [
     "conditions": null,
     "forms": [],
     "url": null,
-    "verified": false
+    "verified": false,
+    "branches": [
+      {
+        "name": "イオンモール岐阜各務原店",
+        "end": "2026-11-25T23:59:00+09:00",
+        "url": null
+      },
+      {
+        "name": "イオンモール草津店",
+        "end": "2026-11-25T23:59:00+09:00",
+        "url": null
+      }
+    ]
   },
   {
     "id": "wondergoo-stores-20261127",
@@ -156,7 +168,19 @@ window.LOTTERIES = [
     "conditions": null,
     "forms": [],
     "url": null,
-    "verified": false
+    "verified": false,
+    "branches": [
+      {
+        "name": "下瀬谷店",
+        "end": "2026-11-24T23:00:00+09:00",
+        "url": null
+      },
+      {
+        "name": "瑞江店",
+        "end": "2026-11-25T23:59:00+09:00",
+        "url": null
+      }
+    ]
   },
   {
     "id": "clabo-stores-20261127",
@@ -171,7 +195,20 @@ window.LOTTERIES = [
     "conditions": null,
     "forms": [],
     "url": null,
-    "verified": false
+    "verified": false,
+    "branches": [
+      {
+        "name": "販売買取センターNAMBA",
+        "end": "2026-11-24T23:59:00+09:00",
+        "how": "X（フォロー＋リポスト）・1BOX・シュリンクなし",
+        "url": "https://www.c-labo.jp/shop/namba2nd/blog/625078/"
+      },
+      {
+        "name": "秋葉原ラジオ会館本店",
+        "end": "2026-11-24T23:59:00+09:00",
+        "url": null
+      }
+    ]
   },
   {
     "id": "yamada-20261123",

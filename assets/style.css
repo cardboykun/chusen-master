@@ -180,6 +180,16 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .list:not(.my-list)>.card .card-foot .go{flex:1 1 100%}
 .list:not(.my-list)>.card .my-btn{margin-left:0}
 .list:not(.my-list)>.empty{grid-column:1/-1}
+/* 「各店」の抽選の店舗ごとの応募先 */
+.branches{margin-top:8px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);font-size:.84rem}
+.branches summary{cursor:pointer;padding:7px 10px;font-weight:800;color:var(--accent)}
+.branches ul{list-style:none;margin:0;padding:0 10px 4px;max-height:320px;overflow-y:auto}
+.branches li{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 8px;padding:6px 0;border-top:1px dashed var(--line)}
+.branches li>a,.branches li>span:first-child{flex:1 1 9em;font-weight:700}
+.branches .br-how{font-size:.75rem;color:var(--muted)}
+.branches .br-end{font-size:.78rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.branches li.is-done{opacity:.55}
+.branches .br-note{margin:0;padding:4px 10px 8px;font-size:.72rem;color:var(--muted)}
 /* 記事：見出しの箱と本文の箱。商品記事はあいだに抽選一覧が入る。それ以外はひとつの箱に見せる */
 .article .article-head{margin-bottom:14px}
 .article .article-body{margin-top:0}
