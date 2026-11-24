@@ -6,8 +6,28 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-23T20:15:00+09:00";
+window.SITE_UPDATED = "2026-11-24T09:20:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "yamada-20261123",
+    "store": "ヤマダデンキ（ヤマダデジタル会員アプリ）",
+    "products": [
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "app",
+    "start": null,
+    "end": "2026-11-25T23:59:00+09:00",
+    "result": "2026-12-09T12:00:00+09:00",
+    "requirement": "ヤマダデジタル会員アプリから応募する抽選（一部の店舗だけ）。9種まとめての販売。当選発表は12/9 12時ごろ、購入は12/12〜12/18の予定。応募できる店舗・条件はアプリ内の案内で確認してください",
+    "conditions": [
+      "アプリ"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": null,
+    "verified": false
+  },
   {
     "id": "joshin-app-20261123",
     "store": "Joshin キッズランド（店頭・アプリのクーポン）",
