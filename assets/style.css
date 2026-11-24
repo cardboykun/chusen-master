@@ -58,6 +58,10 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .stats b{font-family:var(--font-num);font-size:2rem;line-height:1.1}
 .stats span{font-size:.78rem;color:rgba(255,255,255,.75);font-weight:700}
 .stats .is-hot a{border-color:transparent;background:linear-gradient(var(--navy-2),var(--navy-2)) padding-box,var(--holo) border-box;border:2px solid transparent}
+.hero-author{display:inline-flex;align-items:center;gap:10px;margin:14px 0 0;padding:6px 14px 6px 6px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:rgba(255,255,255,.85);font-size:.8rem;line-height:1.5;text-decoration:none;max-width:100%}
+.hero-author:hover{background:rgba(255,255,255,.16)}
+.hero-author img{flex:none;width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.6)}
+.hero-author b{color:#fff}
 .hero .updated{margin:16px 0 0;font-size:.78rem;color:rgba(255,255,255,.55)}
 
 /* ---------- Sections ---------- */
