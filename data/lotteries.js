@@ -9,6 +9,24 @@
 window.SITE_UPDATED = "2026-11-24T13:00:00+09:00";
 window.LOTTERIES = [
   {
+    "id": "itoyokado-20261127",
+    "store": "イトーヨーカドー・アリオ（一部店舗・店頭QR）",
+    "products": [
+      "ニンジャスピナー",
+      "ムニキスゼロ"
+    ],
+    "method": "store",
+    "start": "2026-11-27T00:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "requirement": "一部の店舗で行う抽選。店頭に貼られたQRコードを読み込み、LivePocketから応募する。対象店舗・受付時間・購入できる数は各店の掲示で確認してください",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
     "id": "hobbystation-hadou-20261124",
     "store": "ホビーステーション 各店",
     "products": [
