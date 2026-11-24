@@ -25,5 +25,7 @@ window.PRODUCTS = [
   { slug: "mega-brave", name: "メガブレイブ", kind: "拡張パック", release: null, price: null,
     keys: ["メガブレイブ"], article: null, colors: ["#1f2937", "#eab308"] },
   { slug: "mega-symphonia", name: "メガシンフォニア", kind: "拡張パック", release: null, price: null,
-    keys: ["メガシンフォニア"], article: null, colors: ["#1e1b4b", "#818cf8"] }
+    keys: ["メガシンフォニア"], article: null, colors: ["#1e1b4b", "#818cf8"] },
+  { slug: "munikis-zero", name: "ムニキスゼロ", kind: "拡張パック", release: null, price: null,
+    keys: ["ムニキスゼロ"], article: null, colors: ["#3b0764", "#a3e635"] }
 ];

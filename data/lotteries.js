@@ -6,8 +6,50 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-24T09:20:00+09:00";
+window.SITE_UPDATED = "2026-11-24T12:20:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "hobbystation-hadou-20261124",
+    "store": "ホビーステーション 各店",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-24T12:00:00+09:00",
+    "end": "2026-11-26T23:59:00+09:00",
+    "result": "2026-12-03",
+    "requirement": "LivePocketで応募する再販の抽選（1BOX 6,000円、1人2BOXまで）。対象28店舗から1店舗だけ選んで応募し、12/7〜12/13に応募した店舗の店頭で受け取り（郵送なし）。本人確認はマイナンバーカードのみで、LivePocketの氏名と一致が必要。シュリンクは外して販売",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink"
+    ],
+    "url": "https://livepocket.jp/e/d275s",
+    "verified": true
+  },
+  {
+    "id": "hobbystation-munikis-20261124",
+    "store": "ホビーステーション 各店",
+    "products": [
+      "ムニキスゼロ"
+    ],
+    "method": "web",
+    "start": "2026-11-24T12:00:00+09:00",
+    "end": "2026-11-26T23:59:00+09:00",
+    "result": "2026-12-04",
+    "requirement": "LivePocketで応募する再販の抽選（1BOX 5,400円、1人2BOXまで）。対象28店舗から1店舗だけ選んで応募し、12/7〜12/13に応募した店舗の店頭で受け取り（郵送なし）。本人確認はマイナンバーカードのみで、LivePocketの氏名と一致が必要。シュリンクは外して販売。当選発表は12/4〜12/5の予定",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink"
+    ],
+    "url": "https://livepocket.jp/e/x1x8-",
+    "verified": true
+  },
   {
     "id": "yamada-20261123",
     "store": "ヤマダデンキ（ヤマダデジタル会員アプリ）",
