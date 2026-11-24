@@ -6,7 +6,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-24T12:20:00+09:00";
+window.SITE_UPDATED = "2026-11-24T13:00:00+09:00";
 window.LOTTERIES = [
   {
     "id": "hobbystation-hadou-20261124",
@@ -49,6 +49,111 @@ window.LOTTERIES = [
     ],
     "url": "https://livepocket.jp/e/x1x8-",
     "verified": true
+  },
+  {
+    "id": "bookoff-stores-20261127",
+    "store": "ブックオフ 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "x",
+    "start": null,
+    "end": "2026-11-26T23:59:00+09:00",
+    "requirement": "秋葉原駅前・池袋サンシャイン60通り・JR蒲田駅東口・武蔵小金井・東千葉祐光・大宮ラクーン・荒川沖・四日市日永・イオン桑名・那覇与儀ほか約55店で、店ごとに抽選を受付中。店の公式Xのフォロー・リポストで応募する店が多く、店頭やアプリで受け付ける店もある。締切は店ごとに違い、早い店は11/24 14時ごろ、遅い店は11/26。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "batoloco-stores-20261127",
+    "store": "バトロコ 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-26T17:00:00+09:00",
+    "requirement": "渋谷センター街・池袋・柏駅前・沼津駅前・盛岡大通・札幌大通・仙台駅東口・新潟万代・金沢駅前ほか約25店（バトロコミニ・satelliteを含む）で、店ごとに抽選を受付中。会員向けのWeb応募で購入時に本人確認がある店が多く、店の公式Xのリポストや店頭で受け付ける店もある。締切は店ごとに違い、早い店は11/24 20時、遅い店は11/26 17時。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "surugaya-stores-20261127",
+    "store": "駿河屋 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "x",
+    "start": null,
+    "end": "2026-11-25T23:59:00+09:00",
+    "requirement": "横浜・秋葉原本館・千葉中央・大宮マルイ・高崎OPA・小山・札幌ノルベサ・博多マルイ・小倉あるあるCity・大垣ほか約16店（駿河屋の看板の提携店を含む）で、店ごとに抽選を受付中。店と駿河屋トレカの公式Xのフォロー・リポストで応募する店が多い（横浜店は当選発表日にDMを開けておく必要あり）。締切は店ごとに違い、早い店は11/24 23:59、多くは11/25 23:59。応募方法・条件は各店の告知で確認してください（通販の抽選は終了）",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "mint-stores-20261127",
+    "store": "MINT（ミント） 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "x",
+    "start": null,
+    "end": "2026-11-26T12:00:00+09:00",
+    "requirement": "新宿・MINT GAMES 池袋・吉祥寺・渋谷・名古屋・仙台・沖縄の7店で、店ごとに抽選を受付中。店の公式Xで応募する店と、Webで応募する店がある。締切は店ごとに違い、早い店は11/24 20時、遅い店は11/26 12時。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "asobiva-stores-20261127",
+    "store": "あそビバ 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-25T23:59:00+09:00",
+    "requirement": "イオンモール岐阜各務原店・イオンモール草津店の2店で、店ごとに抽選を受付中（どちらも11/25締切）。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "wondergoo-stores-20261127",
+    "store": "WonderGOO 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "app",
+    "start": null,
+    "end": "2026-11-25T23:59:00+09:00",
+    "requirement": "全店での抽選（11/16締切）の対象外だった瑞江店・下瀬谷店で、店ごとに抽選を受付中。締切は下瀬谷店が11/24 23時、瑞江店が11/25 23:59。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "clabo-stores-20261127",
+    "store": "カードラボ 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-24T23:59:00+09:00",
+    "requirement": "秋葉原ラジオ会館本店・販売買取センターNAMBAで、店ごとに抽選を受付中（どちらも11/24 23:59締切）。マルイ海老名店などの抽選は終了。応募方法・条件は各店の告知で確認してください",
+    "conditions": null,
+    "forms": [],
+    "url": null,
+    "verified": false
   },
   {
     "id": "yamada-20261123",
@@ -105,7 +210,9 @@ window.LOTTERIES = [
       "アプリ",
       "会員登録"
     ],
-    "forms": [],
+    "forms": [
+      "box_noshrink"
+    ],
     "url": null,
     "verified": false
   },
@@ -397,6 +504,8 @@ window.LOTTERIES = [
     "method": "x",
     "start": "2026-11-16T00:00:00+09:00",
     "end": "2026-11-22T23:59:00+09:00",
+    "result": "2026-11-25",
+    "result_how": "当選者だけに各店のXのDMで連絡",
     "requirement": "店舗会員限定。各店の公式XにDMで会員番号・氏名・希望商品を送って応募。当選者のみ11/25に連絡、1人1BOX・店頭で現金払い",
     "conditions": [
       "会員登録",
@@ -405,23 +514,6 @@ window.LOTTERIES = [
     "forms": [],
     "url": null,
     "verified": false
-  },
-  {
-    "id": "suruga-yokohama-20261119",
-    "store": "駿河屋 横浜店（X抽選）",
-    "products": [
-      "ハドウシーカー"
-    ],
-    "method": "x",
-    "start": "2026-11-19T00:00:00+09:00",
-    "end": "2026-11-25T23:59:00+09:00",
-    "requirement": "@surugaya_toreka と @suruga_yokohama をフォロー＋告知ポストをリポスト。当選発表日にDMを開放していないと無効",
-    "conditions": [
-      "SNS"
-    ],
-    "forms": [],
-    "url": "https://x.com/suruga_yokohama",
-    "verified": true
   },
   {
     "id": "gangi-20261119",
@@ -607,7 +699,10 @@ window.LOTTERIES = [
       "会員登録",
       "アプリ"
     ],
-    "forms": [],
+    "forms": [
+      "box_shrink",
+      "set"
+    ],
     "url": "https://www.shop-shimamura.com/disp/itemlist/?pre_rsv_icon=1",
     "verified": true
   },
@@ -670,24 +765,6 @@ window.LOTTERIES = [
       "box_shrink"
     ],
     "url": "https://www.suruga-ya.jp/blog/?q=pokeka_chusen261105.html",
-    "verified": true
-  },
-  {
-    "id": "clabo-20261103",
-    "store": "カードラボ マルイ海老名店",
-    "products": [
-      "ハドウシーカー"
-    ],
-    "method": "x",
-    "start": "2026-11-03T00:00:00+09:00",
-    "end": "2026-11-19T23:59:00+09:00",
-    "requirement": "店舗のXをフォローして対象ポストをリポスト・当選はDM連絡・購入時に本人確認",
-    "conditions": [
-      "SNS",
-      "本人確認"
-    ],
-    "forms": [],
-    "url": "https://www.c-labo.jp/blog/623647/",
     "verified": true
   },
   {
