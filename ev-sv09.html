@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Outfit:wght@600;800&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=02aecf42">
+<link rel="stylesheet" href="assets/style.css?v=37625010">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TYYTECGVBV"></script>
 <script>
@@ -66,6 +66,15 @@
 .ev-bar i{display:block;height:100%;background:linear-gradient(90deg,#38bdf8,#a78bfa,#f472b6)}
 .ev-pick{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:.9rem}
 .ev-pick b{font-family:var(--font-num)}
+.ev-vs h3{font-size:1rem;margin:14px 0 8px}
+.ev-vs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.ev-vs-grid div{background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.ev-vs-grid span{display:block;font-size:.8rem;color:var(--muted);font-weight:700}
+.ev-vs-grid b{display:block;font-family:var(--font-num);font-size:1.25rem}
+.ev-vs-grid small{display:block;font-size:.78rem;color:var(--muted);margin-top:2px}
+.ev-vs-out{margin:10px 0 0;font-weight:800;padding:8px 12px;border-radius:10px}
+.ev-vs-out.buy{background:#e0f2fe;color:#0369a1}.ev-vs-out.open{background:#fce7f3;color:#be185d}
+@media (prefers-color-scheme:dark){.ev-vs-out.buy{background:#0c2a3d;color:#7dd3fc}.ev-vs-out.open{background:#3a1530;color:#f9a8d4}}
 .ev-spark{width:100%;height:60px;display:block;color:#7c3aed}
 .ev-spark-none{font-size:.8rem;color:var(--muted)}
 .ev-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
@@ -103,7 +112,7 @@
   <p>BOXのまま持っておくと 9,300円の目安、開けて当たりを売ると平均 1,741円の目安です。開けると平均で <b class='ev-minus'>-7,559円</b> になる計算です。ただし平均なので、当たりが出なければもっと下がり、高いカードが出れば大きく上回ります。</p>
   
 
-  <h2 class="ev-sec" id="calc">自分で計算してみる<small>買った値段とBOX数を入れてください</small></h2>
+  <h2 class="ev-sec" id="calc">自分で計算してみる<small>買った値段とBOX数を入れてください。カードを選ぶと「開けるか、買うか」もくらべられます</small></h2>
   <div class="ev-calc" id="ev-calc">
     <div class="ev-form">
       <label>1BOXの値段（円）<input type="number" id="ev-price" min="0" step="100" value="9300"></label>
@@ -117,7 +126,8 @@
     </div>
     <ul class="ev-prob" id="ev-prob"></ul>
     <div class="ev-pick"><label>このカードが出る確率は？ <select id="ev-card"></select></label>
-      <p id="ev-card-out"></p></div>
+      <p id="ev-card-out"></p>
+      <div class="ev-vs" id="ev-vs" aria-live="polite"></div></div>
   </div>
 
   <h2 class="ev-sec">期待値の内訳<small>1BOXあたり</small></h2>
@@ -156,6 +166,22 @@ function calc(){
     return "<li>"+n+"BOXで <b>"+g.l+"</b> が1枚以上出る確率<b>"+pct(p)+"</b><div class='ev-bar'><i style='width:"+(p*100).toFixed(1)+"%'></i></div></li>"}).join("");
   var c=D.cards[+sel.value];
   if(c){$("ev-card-out").innerHTML=n+"BOX開けて1枚以上出る確率：<b>"+pct(at(c.p,n))+"</b>（買取 "+(c.b?f(c.b):"－")+"／販売 "+f(c.s)+"）"}
+  vs(c,price);
+}
+// 開けるか、買うか：そのカードが出るまで開けたときの平均の費用と、単品の販売価格をくらべる
+function vs(c,price){
+  var el=$("ev-vs");
+  if(!c||!price){el.innerHTML="";return}
+  var boxes=1/c.p, half=Math.LN2/c.p, cost=price*boxes;
+  var other=Math.max(0,D.evBuy-c.p*(c.b||0));           // 1BOXあたり、ほかの当たりを売って戻る分
+  var net=Math.max(0,(price-other)*boxes);               // ほかの当たりを売ったあとの実質の費用
+  var d=net-c.s, win=d>0;
+  var bx=function(v){return v<10?v.toFixed(1):Math.round(v).toLocaleString("ja-JP")};
+  el.innerHTML="<h3>🆚 開けるか、買うか</h3><div class='ev-vs-grid'>"
+    +"<div><span>BOXで出すまで（平均）</span><b>約"+bx(boxes)+"BOX＝"+f(cost)+"</b><small>半分の確率で出すには約"+bx(half)+"BOX。ほかの当たりを売ると実質 約"+f(net)+"</small></div>"
+    +"<div><span>単品で買うと（販売価格）</span><b>"+f(c.s)+"</b><small>目安として幅を持たせた価格です</small></div></div>"
+    +"<p class='ev-vs-out "+(win?"buy":"open")+"'>"+(win?"👉 単品で買うほうが、平均で約"+f(d)+"安い目安です"
+      :"👉 開けて出すほうが、平均で約"+f(-d)+"安い目安です（ただし運しだいで、何BOX開けても出ないこともあります）")+"</p>";
 }
 document.querySelectorAll("#ev-calc .quick button").forEach(function(b){b.addEventListener("click",function(){$("ev-price").value=b.dataset.p;calc()})});
 ["ev-price","ev-n","ev-card"].forEach(function(i){$(i).addEventListener("input",calc)});
@@ -171,6 +197,6 @@ calc();
   </div>
 </footer>
 
-<script src="assets/core.js?v=e061ff41"></script>
+<script src="assets/core.js?v=ba93f1e9"></script>
 </body>
 </html>

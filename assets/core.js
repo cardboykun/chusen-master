@@ -82,6 +82,20 @@
       + `<p class="br-note">店名を押すと、その店の公式の告知が開きます。</p></details>`;
   }
 
+  // 相場のバッジ「相場 17,999円・定価の2.5倍」（build_pages.market_html と同じ形）。受付終了の抽選には出さない
+  const MARKET = PAGES.market || {};
+  const shortName = (n) => n.replace("30th CELEBRATION ", "30th ").replace("プレミアムデッキセット ", "プレミアムデッキ ");
+  function marketHtml(l, st) {
+    if (st === "closed") return "";
+    const hits = l.products.filter((n) => MARKET[n]).slice(0, 2);
+    return hits.map((n) => {
+      const m = MARKET[n];
+      const lab = hits.length > 1 ? `${shortName(n)} ` : "";
+      const ratio = m.m ? `・定価の${(m.p / m.m).toFixed(1)}倍` : "";
+      return `<a class="badge market" href="${BASE}premium.html" title="出品中の最低価格（${esc(m.d)}時点）。売買をすすめるものではありません">💰 ${esc(lab)}相場 ${m.p.toLocaleString("en-US")}円${ratio}</a>`;
+    }).join("");
+  }
+
   function card(l, now = Date.now(), opts = {}) {
     const st = statusOf(l, now);
     const stLabel = { open: "受付中", upcoming: l.tentative ? "予定" : "開始前", closed: "受付終了" }[st];
@@ -103,7 +117,7 @@
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
         <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
-        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}</div>${branchesHtml(l, now)}
+        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}${marketHtml(l, st)}</div>${branchesHtml(l, now)}
       </div>
       <div class="deadline">${dl}</div>
       <div class="card-foot">${l.url ? `<a class="go" href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${l.verified === false ? "お店のページを見る →" : "公式の応募ページ・告知を見る →"}</a>` : ""}${st !== "closed" ? myButton(l.id) : ""}</div>
