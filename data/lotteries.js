@@ -6,7 +6,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-25T12:30:00+09:00";
+window.SITE_UPDATED = "2026-11-25T15:05:00+09:00";
 window.LOTTERIES = [
   {
     "id": "edionnet-fukubukuro-20261125",
@@ -939,6 +939,27 @@ window.LOTTERIES = [
       "box_shrink"
     ],
     "url": "https://docs.google.com/forms/d/e/1FAIpQLScmxaZTyfeXhYnHVW4L9ZuqAgTeLoycN0Nk2XSHDn_tXDrwPA/viewform",
+    "verified": true
+  },
+  {
+    "id": "lawsonloppi-20261125",
+    "store": "ローソン（Loppi抽選）",
+    "products": [
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"
+    ],
+    "method": "web",
+    "start": "2026-11-25T10:00:00+09:00",
+    "end": "2026-11-29T23:30:00+09:00",
+    "result": "2026-12-04T18:00:00+09:00",
+    "result_how": "当選者だけにメールで連絡",
+    "requirement": "Loppiの抽選販売（9月発売分の再販）。11/25 10:00までにローソンWEB会員へ登録済みの人が対象。税込6,860円（送料込み）、当選後の購入は12/4 18:00〜12/8 23:30、受け取りは12/18以降",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://www.lawson.co.jp/lab/entertainment/art/20260623_giftpokemon.html",
     "verified": true
   },
   {
