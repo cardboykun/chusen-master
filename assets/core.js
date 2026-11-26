@@ -113,11 +113,10 @@
     const formBadge = forms.length ? forms.map((f) => `<span class="badge form">${FORM[f]}</span>`).join("") : `<span class="badge muted">販売形態：不明</span>`;
     return `<li class="card ${st === "closed" ? "is-closed" : ""} ${urgent ? "is-urgent" : ""}">
       <div class="card-main">
-        <div class="card-top">${opts.isNew ? `<span class="badge new">NEW</span>` : ""}<span class="badge ${st}">${stLabel}</span><span class="badge method">${METHOD[l.method] || esc(l.method)}</span>${l.verified === false ? `<span class="badge unverified" title="応募前に必ずお店の公式情報をご確認ください。">公式未確認</span>` : ""}</div>
+        <div class="card-top">${opts.isNew ? `<span class="badge new">NEW</span>` : ""}<span class="badge ${st}">${stLabel}</span><span class="badge method">${METHOD[l.method] || esc(l.method)}</span></div>
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
-        <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}${l.verified === false ? `<p class="unverified-note">※応募前に必ずお店の公式情報をご確認ください。</p>` : ""}
-        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}${marketHtml(l, st)}</div>${branchesHtml(l, now)}
+        <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}${marketHtml(l, st)}</div>${branchesHtml(l, now)}
       </div>
       <div class="deadline">${dl}</div>
       <div class="card-foot">${l.url ? `<a class="go" href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${l.verified === false ? "お店のページを見る →" : "公式の応募ページ・告知を見る →"}</a>` : ""}${st !== "closed" ? myButton(l.id) : ""}</div>
