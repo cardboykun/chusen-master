@@ -16,6 +16,8 @@ window.PRODUCTS = [
     keys: ["スペシャルデッキセットMEGA"], article: null, colors: ["#4c1d95", "#f97316"] },
   { slug: "storm-emeralda", name: "ストームエメラルダ", kind: "拡張パック", release: "2026-07-31", price: "1パック200円",
     keys: ["ストームエメラルダ"], article: null, colors: ["#064e3b", "#10b981"] },
+  { slug: "abyss-eye", name: "アビスアイ", kind: "拡張パック", release: null, price: "1パック200円",
+    keys: ["アビスアイ"], article: null, colors: ["#0c1445", "#6366f1"] },
   { slug: "starter-set-ex-2026", name: "スターターセットex", kind: "デッキ", release: "2026-07-31", price: null,
     keys: ["スターターセットex"], article: null, colors: ["#9f1239", "#fb7185"] },
   { slug: "start-deck-100-battle-collection", name: "スタートデッキ100 バトルコレクション", kind: "デッキ", release: "2025-12-19", price: null,

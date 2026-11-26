@@ -6,8 +6,32 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-26T09:20:00+09:00";
+window.SITE_UPDATED = "2026-11-26T14:50:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "hobbysearch-20261127",
+    "store": "ホビーサーチ",
+    "products": [
+      "30th CELEBRATION BOX",
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー",
+      "スペシャルデッキセットMEGA",
+      "ストームエメラルダ",
+      "アビスアイ",
+      "メガブレイブ",
+      "メガシンフォニア"
+    ],
+    "method": "web",
+    "start": "2026-11-27T17:00:00+09:00",
+    "end": null,
+    "requirement": "ホビーサーチ通販の抽選販売。各商品のページから11/27 17時に応募開始（締切は未掲載）。参加条件ありと案内されているので、各商品ページで確認を。購入は1世帯1点まで（スペシャルデッキセットMEGAは11点まで）",
+    "conditions": null,
+    "forms": [
+      "box_shrink",
+      "set"
+    ],
+    "url": "https://www.1999.co.jp/11371442",
+    "verified": true
+  },
   {
     "id": "aeon-20261126",
     "store": "イオンスタイルオンライン",
