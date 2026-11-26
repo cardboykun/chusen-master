@@ -6,8 +6,65 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-25T15:05:00+09:00";
+window.SITE_UPDATED = "2026-11-26T09:20:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "aeon-20261126",
+    "store": "イオンスタイルオンライン",
+    "products": [
+      "スターターセットex"
+    ],
+    "method": "web",
+    "start": "2026-11-26T11:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "requirement": "イオンスタイルオンラインの「トレーディングカードゲーム」事前エントリー（抽選）で、スターターセットex 3種（イーブイex・ゾロア＆ゾロアークex・ニャオハ＆マスカーニャex）が対象。会員登録が必要",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "dorasuta-20261125",
+    "store": "ドラゴンスター",
+    "products": [
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-27T23:59:00+09:00",
+    "result": "2026-11-29",
+    "requirement": "ドラゴンスター通販の抽選（会員ページから応募）・当選発表は11/29予定・当選者は11/29〜12/5に購入手続き",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "oretan-20261125",
+    "store": "オレタン（岡山本店・福岡天神店・松山店）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-12-01",
+    "requirement": "再販分の抽選。岡山本店・福岡天神店・松山店の店舗ごとの抽選ページ（会員向け）から応募・当選発表は12/1予定・当選者は12/5〜12/7に購入",
+    "conditions": [
+      "会員登録"
+    ],
+    "forms": [],
+    "url": null,
+    "verified": false
+  },
   {
     "id": "edionnet-fukubukuro-20261125",
     "store": "エディオンネットショップ",
