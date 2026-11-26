@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-26T14:50:00+09:00";
+window.SITE_UPDATED = "2026-11-26T17:20:00+09:00";
 window.LOTTERIES = [
   {
     "id": "hobbysearch-20261127",
@@ -372,6 +372,31 @@ window.LOTTERIES = [
     ],
     "forms": [
       "box_noshrink"
+    ],
+    "url": null,
+    "verified": false
+  },
+  {
+    "id": "biccamera-namba-20261127",
+    "store": "ビックカメラ なんば店",
+    "products": [
+      "30th CELEBRATION BOX",
+      "MEGAドリームex",
+      "ニンジャスピナー",
+      "ストームエメラルダ",
+      "メガブレイブ",
+      "メガシンフォニア"
+    ],
+    "method": "store",
+    "start": "2026-11-27T00:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-12-04",
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-06",
+    "requirement": "なんば店の店頭で受け付ける抽選（11/27〜11/29）。対象は30th CELEBRATION・MEGAドリームex・ニンジャスピナー・ストームエメラルダ・メガブレイブ・メガシンフォニア。受付時間・応募の条件・購入できる数はお店の案内で確認してください",
+    "conditions": null,
+    "forms": [
+      "pack"
     ],
     "url": null,
     "verified": false
