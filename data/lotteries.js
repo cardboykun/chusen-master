@@ -8,8 +8,217 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-26T17:20:00+09:00";
+window.SITE_UPDATED = "2026-11-26T17:30:00+09:00";
 window.LOTTERIES = [
+  {
+    "id": "tsutaya-stores-20261127",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-26T08:00:00+09:00",
+    "end": "2026-11-29T20:00:00+09:00",
+    "result": "2026-12-01",
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-07",
+    "requirement": "今市店（栃木）でLivePocketの抽選を受付中（1BOX 6,000円・1人1BOX）。店頭のカウンターで受け取るシリアルコードが必要。購入時にVポイントカードと顔写真付きの公的な身分証が必要で、LivePocketの名前と一致させる。当選者は12/5〜12/7に店頭で購入（郵送なし・シュリンクとミシン目は外して渡し）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink",
+      "box_noperi"
+    ],
+    "url": "https://livepocket.jp/e/r9smj",
+    "verified": true,
+    "branches": [
+      {
+        "name": "今市店",
+        "end": "2026-11-29T20:00:00+09:00",
+        "how": "LivePocket（店頭でシリアルコード）",
+        "url": "https://livepocket.jp/e/r9smj"
+      }
+    ]
+  },
+  {
+    "id": "tsutaya-stores-20260916",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "30th CELEBRATION BOX"
+    ],
+    "method": "web",
+    "start": "2026-11-24T10:00:00+09:00",
+    "end": "2026-11-27T23:59:00+09:00",
+    "result": "2026-11-28",
+    "requirement": "北習志野駅前店（千葉・11/26 23:59締切）と神明店（福井・11/27 23:59締切）でLivePocketの抽選を受付中（1BOX 7,200円）。北習志野駅前店は店頭で配るシリアルコードが必要、神明店はVポイントカードとマイナンバーカードが必要。どちらも当選発表は11/28予定で、店頭受け取りのみ・シュリンクは開けて渡し。購入は北習志野駅前店が11/30〜12/1、神明店が12/1〜12/3。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink"
+    ],
+    "url": "https://livepocket.jp/e/merhm",
+    "verified": true,
+    "branches": [
+      {
+        "name": "北習志野駅前店",
+        "end": "2026-11-26T23:59:00+09:00",
+        "how": "LivePocket（店頭でシリアルコード）",
+        "url": "https://livepocket.jp/e/merhm"
+      },
+      {
+        "name": "神明店",
+        "end": "2026-11-27T23:59:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/on7tx"
+      }
+    ]
+  },
+  {
+    "id": "tsutaya-stores-20260731",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": "2026-11-24T10:00:00+09:00",
+    "end": "2026-11-26T23:59:00+09:00",
+    "result": "2026-11-28",
+    "buy_start": "2026-11-30",
+    "buy_end": "2026-12-01",
+    "requirement": "北習志野駅前店（千葉）でLivePocketの抽選を受付中（1BOX 6,000円・1人1BOX・11/26 23:59締切）。店頭で毎日10時〜20時30分に配るシリアルコードが必要で、顔写真付きの公的な身分証で本人確認あり。当選者は11/30〜12/1に店頭で購入（郵送なし・シュリンクとミシン目は開けて渡し）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink"
+    ],
+    "url": "https://livepocket.jp/e/merhm",
+    "verified": true,
+    "branches": [
+      {
+        "name": "北習志野駅前店",
+        "end": "2026-11-26T23:59:00+09:00",
+        "how": "LivePocket（店頭でシリアルコード）",
+        "url": "https://livepocket.jp/e/merhm"
+      }
+    ]
+  },
+  {
+    "id": "tsutaya-stores-20261113",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "スペシャルデッキセットMEGA"
+    ],
+    "method": "web",
+    "start": "2026-11-23T07:00:00+09:00",
+    "end": "2026-11-29T21:45:00+09:00",
+    "result": "2026-12-01",
+    "buy_start": "2026-12-04",
+    "buy_end": "2026-12-06",
+    "requirement": "入間仏子店（埼玉）でLivePocketの抽選を受付中（5,500円・1家族1個まで）。LivePocketの名前と身分証の名前を一致させる必要あり。当選者は12/4〜12/6に店頭で購入（郵送なし）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://livepocket.jp/e/c4pkq",
+    "verified": true,
+    "branches": [
+      {
+        "name": "入間仏子店",
+        "end": "2026-11-29T21:45:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/c4pkq"
+      }
+    ]
+  },
+  {
+    "id": "tsutaya-stores-20260916-cardset",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "web",
+    "start": "2026-11-24T10:00:00+09:00",
+    "end": "2026-11-29T21:45:00+09:00",
+    "result": "2026-12-02",
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-06",
+    "requirement": "積文館書店シュロアモール店（福岡）でLivePocketの抽選を受付中（9種それぞれ1,200円・各1個まで）。LivePocketの名前は身分証と同じ本名にする必要あり。当選者は12/5〜12/6に店頭で購入（郵送なし）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://livepocket.jp/e/yq573",
+    "verified": true,
+    "branches": [
+      {
+        "name": "積文館書店シュロアモール店",
+        "end": "2026-11-29T21:45:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/yq573"
+      }
+    ]
+  },
+  {
+    "id": "fukudaya-20261125",
+    "store": "福田屋百貨店（宇都宮店・インターパーク店）",
+    "products": [
+      "ハドウシーカー",
+      "スペシャルデッキセットMEGA"
+    ],
+    "method": "app",
+    "start": "2026-11-25T19:00:00+09:00",
+    "end": "2026-12-01T15:00:00+09:00",
+    "result": "2026-12-11T13:00:00+09:00",
+    "result_how": "当選者だけにLINEのメッセージで連絡",
+    "buy_start": "2026-12-12",
+    "buy_end": "2026-12-18",
+    "requirement": "福田屋百貨店のLINE公式アカウントを友だち登録して応募する抽選。ハドウシーカー1BOX（6,600円）かスペシャルデッキセットMEGA（5,500円）のどちらか1点だけ（1アカウント1点・店舗をまたいだ重複応募は不可）。当選者は12/12〜12/18に宇都宮店かインターパーク店の2階玩具売場で、身分証を持って受け取り・支払い（郵送なし）",
+    "conditions": [
+      "SNS",
+      "本人確認"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://www.fukudaya.net/event/6925",
+    "verified": true
+  },
+  {
+    "id": "furuichi-himi-20261127",
+    "store": "ふるいちトップブックス氷見店（オープン記念）",
+    "products": [
+      "30th CELEBRATION BOX",
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー",
+      "MEGAドリームex"
+    ],
+    "method": "store",
+    "start": "2026-11-27T09:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "requirement": "11/27オープンの記念抽選。30th CELEBRATION BOXは11/27 9時〜21時に店頭で抽選券を配り、11/28 13時ごろ発表・11/28に販売（1人1回）。エーフィ・ブラッキーとMEGAドリームexは11/27〜11/29に店頭に出るQRコードからLivePocketで応募し、12/1までに発表・12/4〜12/6に販売。ふるいちアプリ（本会員）と身分証が必要で、本人だけが購入できる。デッキ以外はシュリンクを開け、箱は回収して販売。受付時間は店頭の案内で確認してください",
+    "conditions": [
+      "会員登録",
+      "アプリ",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink",
+      "set"
+    ],
+    "url": "https://www.furu1.net/news/news_campaign/news_opensale_himi",
+    "verified": true
+  },
   {
     "id": "hobbysearch-20261127",
     "store": "ホビーサーチ",
@@ -50,8 +259,9 @@ window.LOTTERIES = [
     "forms": [
       "set"
     ],
-    "url": null,
-    "verified": false
+    "url": "https://aeonretail.com/Page/k-lottery_sale_02.aspx",
+    "verified": false,
+    "result_how": "当選者だけにメールで連絡"
   },
   {
     "id": "dorasuta-20261125",
@@ -60,7 +270,7 @@ window.LOTTERIES = [
       "ストームエメラルダ"
     ],
     "method": "web",
-    "start": null,
+    "start": "2026-11-25T22:00:00+09:00",
     "end": "2026-11-27T23:59:00+09:00",
     "result": "2026-11-29",
     "requirement": "ドラゴンスター通販の抽選（会員ページから応募）・当選発表は11/29予定・当選者は11/29〜12/5に購入手続き",
@@ -70,8 +280,10 @@ window.LOTTERIES = [
     "forms": [
       "box_shrink"
     ],
-    "url": null,
-    "verified": false
+    "url": "https://dorasuta.membercard.jp/lottery",
+    "verified": false,
+    "buy_start": "2026-11-29",
+    "buy_end": "2026-12-05"
   },
   {
     "id": "oretan-20261125",
@@ -80,16 +292,21 @@ window.LOTTERIES = [
       "ハドウシーカー"
     ],
     "method": "web",
-    "start": null,
+    "start": "2026-11-25T21:00:00+09:00",
     "end": "2026-11-29T23:59:00+09:00",
     "result": "2026-12-01",
-    "requirement": "再販分の抽選。岡山本店・福岡天神店・松山店の店舗ごとの抽選ページ（会員向け）から応募・当選発表は12/1予定・当選者は12/5〜12/7に購入",
+    "requirement": "再販分の抽選。岡山本店・福岡天神店・松山店の店舗ごとの抽選ページ（モバイル会員向け）から応募・当選発表は12/1予定・当選者は12/5〜12/7に店頭で購入（シュリンクとペリペリは外して渡し）",
     "conditions": [
       "会員登録"
     ],
-    "forms": [],
-    "url": null,
-    "verified": false
+    "forms": [
+      "box_noshrink",
+      "box_noperi"
+    ],
+    "url": "https://oretan.membercard.jp/lottery",
+    "verified": false,
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-07"
   },
   {
     "id": "edionnet-fukubukuro-20261125",
@@ -150,7 +367,9 @@ window.LOTTERIES = [
       "box_noshrink"
     ],
     "url": "https://livepocket.jp/e/d275s",
-    "verified": true
+    "verified": true,
+    "buy_start": "2026-12-07",
+    "buy_end": "2026-12-13"
   },
   {
     "id": "hobbystation-munikis-20261124",
@@ -171,7 +390,9 @@ window.LOTTERIES = [
       "box_noshrink"
     ],
     "url": "https://livepocket.jp/e/x1x8-",
-    "verified": true
+    "verified": true,
+    "buy_start": "2026-12-07",
+    "buy_end": "2026-12-13"
   },
   {
     "id": "bookoff-stores-20261127",
@@ -181,8 +402,8 @@ window.LOTTERIES = [
     ],
     "method": "x",
     "start": null,
-    "end": "2026-11-26T23:59:00+09:00",
-    "requirement": "秋葉原駅前・池袋サンシャイン60通り・JR蒲田駅東口・武蔵小金井・東千葉祐光・大宮ラクーン・荒川沖・四日市日永・イオン桑名・那覇与儀ほか約55店で、店ごとに抽選を受付中。店の公式Xのフォロー・リポストで応募する店が多く、店頭やアプリで受け付ける店もある。締切は店ごとに違い、早い店は11/24 14時ごろ、遅い店は11/26。応募方法・条件は各店の告知で確認してください",
+    "end": "2026-11-27T12:00:00+09:00",
+    "requirement": "秋葉原駅前・横須賀中央・ヴィータモールせいせき・スーパーバザーショップス市川・池袋サンシャイン60通り・JR蒲田駅東口・武蔵小金井・東千葉祐光・大宮ラクーン・荒川沖・四日市日永・イオン桑名・那覇与儀ほか約55店で、店ごとに抽選を受付中。店の公式Xのフォロー・リポストで応募する店が多く、店頭やアプリで受け付ける店もある。締切は店ごとに違い、早い店は11/24 14時ごろ、遅い店は11/27 12時。応募方法・条件は各店の告知で確認してください",
     "conditions": null,
     "forms": [],
     "url": null,
@@ -196,8 +417,8 @@ window.LOTTERIES = [
     ],
     "method": "web",
     "start": null,
-    "end": "2026-11-26T17:00:00+09:00",
-    "requirement": "渋谷センター街・池袋・柏駅前・沼津駅前・盛岡大通・札幌大通・仙台駅東口・新潟万代・金沢駅前ほか約25店（バトロコミニ・satelliteを含む）で、店ごとに抽選を受付中。会員向けのWeb応募で購入時に本人確認がある店が多く、店の公式Xのリポストや店頭で受け付ける店もある。締切は店ごとに違い、早い店は11/24 20時、遅い店は11/26 17時。応募方法・条件は各店の告知で確認してください",
+    "end": "2026-11-26T18:00:00+09:00",
+    "requirement": "吉祥寺駅前・渋谷センター街・池袋・柏駅前・沼津駅前・盛岡大通・札幌大通・仙台駅東口・新潟万代・金沢駅前ほか約25店（バトロコミニ・satelliteを含む）で、店ごとに抽選を受付中。会員向けのWeb応募で購入時に本人確認がある店が多く、店の公式Xのリポストや店頭で受け付ける店もある。締切は店ごとに違い、早い店は11/24 20時、遅い店は11/26 18時。応募方法・条件は各店の告知で確認してください",
     "conditions": null,
     "forms": [],
     "url": null,
@@ -211,8 +432,8 @@ window.LOTTERIES = [
     ],
     "method": "x",
     "start": null,
-    "end": "2026-11-25T23:59:00+09:00",
-    "requirement": "横浜・秋葉原本館・千葉中央・大宮マルイ・高崎OPA・小山・札幌ノルベサ・博多マルイ・小倉あるあるCity・大垣ほか約16店（駿河屋の看板の提携店を含む）で、店ごとに抽選を受付中。店と駿河屋トレカの公式Xのフォロー・リポストで応募する店が多い（横浜店は当選発表日にDMを開けておく必要あり）。締切は店ごとに違い、早い店は11/24 23:59、多くは11/25 23:59。応募方法・条件は各店の告知で確認してください（通販の抽選は終了）",
+    "end": "2026-11-26T23:59:00+09:00",
+    "requirement": "横浜・秋葉原本館・千葉中央・大宮マルイ・高崎OPA・小山・札幌ノルベサ・博多マルイ・小倉あるあるCity・大垣・名古屋大須トレカ・ボードゲーム館ほか約16店（駿河屋の看板の提携店を含む）で、店ごとに抽選を受付中。店と駿河屋トレカの公式Xのフォロー・リポストで応募する店が多い（横浜店は当選発表日にDMを開けておく必要あり）。締切は店ごとに違い、早い店は11/24 23:59、多くは11/25 23:59、遅い店は11/26 23:59。応募方法・条件は各店の告知で確認してください（通販の抽選は終了）",
     "conditions": null,
     "forms": [],
     "url": null,
@@ -374,7 +595,8 @@ window.LOTTERIES = [
       "box_noshrink"
     ],
     "url": null,
-    "verified": false
+    "verified": false,
+    "result_how": "店頭で発表"
   },
   {
     "id": "biccamera-namba-20261127",
@@ -1173,29 +1395,6 @@ window.LOTTERIES = [
     ],
     "forms": [],
     "url": "https://oretan.membercard.jp/lottery",
-    "verified": false
-  },
-  {
-    "id": "joshin-20261117",
-    "store": "Joshin webショップ（対象会員のみ）",
-    "products": [
-      "ハドウシーカー",
-      "ストームエメラルダ",
-      "MEGAドリームex"
-    ],
-    "method": "invite",
-    "start": "2026-11-17T13:00:00+09:00",
-    "end": "2026-11-19T09:59:00+09:00",
-    "requirement": "11/3時点でVIP・プラチナ・ゴールドスマイル会員で、11/16 21:59時点でメルマガ配信を希望している人に応募URLがメールで届く。締切はメールで確認",
-    "conditions": [
-      "会員登録",
-      "購入実績",
-      "その他"
-    ],
-    "forms": [
-      "box_shrink"
-    ],
-    "url": "https://joshinweb.jp/toy/c_chusen.html",
     "verified": false
   },
   {
