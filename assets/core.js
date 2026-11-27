@@ -111,7 +111,8 @@
     const dl = st === "upcoming"
       ? `<span class="label">受付開始</span><span class="date">${l.start ? fmt(l.start) : "日程未定"}</span>`
       : `<span class="label">締切</span><span class="date">${l.end ? fmt(l.end) : "未公表"}</span>${st === "open" && l.end ? `<span class="left">${left(l.end, now)}</span>` : ""}`;
-    const period = l.start || l.end ? `<span class="badge">${l.start ? fmt(l.start) : "?"} 〜 ${l.end ? fmt(l.end) : "未公表"}</span>` : "";
+    // 受付期間：受付中・終了は上の「締切」で足りるので出さない。開始前だけ締切を知るために出す（build_pages.card とそろえる）
+    const period = st === "upcoming" && (l.start || l.end) ? `<span class="badge">${l.start ? fmt(l.start) : "?"} 〜 ${l.end ? fmt(l.end) : "未公表"}</span>` : "";
     const resultBadge = l.result ? `<span class="badge result">当選発表 ${esc(fmtResult(l.result))}</span>` : "";
     const c = l.conditions;
     const condBadge = c == null ? `<span class="badge muted">抽選条件：不明</span>`
