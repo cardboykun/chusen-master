@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-27T09:20:00+09:00";
+window.SITE_UPDATED = "2026-11-27T10:05:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -241,6 +241,24 @@ window.LOTTERIES = [
       "set"
     ],
     "url": "https://www.1999.co.jp/11371442",
+    "verified": true
+  },
+  {
+    "id": "hobbysearch-hadou-20261127",
+    "store": "ホビーサーチ",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-27T17:00:00+09:00",
+    "end": null,
+    "requirement": "ホビーサーチ通販の抽選販売。商品ページから11/27 17時に応募開始（締切は未掲載）。参加条件ありと案内されているので、商品ページで確認を",
+    "note": "1世帯（同じ住所）12点まで。1BOX 6,000円",
+    "conditions": null,
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://www.1999.co.jp/11412157",
     "verified": true
   },
   {
