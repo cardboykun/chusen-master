@@ -96,6 +96,14 @@
     }).join("");
   }
 
+  // 説明文：長いときは冒頭だけ見せて「詳細を見る」で開く（build_pages.req_html と両方そろえる）
+  const REQ_MAX = 50, REQ_HEAD = 36;
+  function reqHtml(t) {
+    const s = Array.from(t || "");
+    if (s.length <= REQ_MAX) return `<p class="req">${esc(t)}</p>`;
+    return `<details class="req-more"><summary><span class="req-short">${esc(s.slice(0, REQ_HEAD).join(""))}…</span><span class="req-btn"></span></summary><p class="req">${esc(t)}</p></details>`;
+  }
+
   function card(l, now = Date.now(), opts = {}) {
     const st = statusOf(l, now);
     const stLabel = { open: "受付中", upcoming: l.tentative ? "予定" : "開始前", closed: "受付終了" }[st];
@@ -116,7 +124,7 @@
         <div class="card-top">${opts.isNew ? `<span class="badge new">NEW</span>` : ""}<span class="badge ${st}">${stLabel}</span><span class="badge method">${METHOD[l.method] || esc(l.method)}</span></div>
         <h3>${storeHref(l) ? `<a href="${storeHref(l)}">${esc(l.store)}</a>` : esc(l.store)}</h3>
         <p class="products">${l.products.map(esc).join(" / ")}</p>
-        <p class="req">${esc(l.requirement)}</p>${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}${marketHtml(l, st)}</div>${branchesHtml(l, now)}
+        ${reqHtml(l.requirement)}${l.result_how ? `<p class="result-how">結果の確認：${esc(l.result_how)}</p>` : ""}        <div class="meta">${condBadge}${formBadge}${period}${resultBadge}${marketHtml(l, st)}</div>${branchesHtml(l, now)}
       </div>
       <div class="deadline">${dl}</div>
       <div class="card-foot">${l.url ? `<a class="go" href="${esc(l.url)}" target="_blank" rel="noopener nofollow">${l.verified === false ? "お店のページを見る →" : "公式の応募ページ・告知を見る →"}</a>` : ""}${st !== "closed" ? myButton(l.id) : ""}</div>

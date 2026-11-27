@@ -149,6 +149,14 @@ h1,h2,h3{font-family:var(--font-head);letter-spacing:.01em}
 .card h3{margin:0;font-size:1.08rem;line-height:1.4}
 .card .products{margin:0;font-size:.9rem}
 .card .req{margin:0;color:var(--muted);font-size:.84rem}
+.req-more summary{cursor:pointer;list-style:none;color:var(--muted);font-size:.84rem}
+.req-more summary::-webkit-details-marker{display:none}
+.req-more .req-btn{display:inline-block;margin-left:6px;color:var(--accent);font-weight:700;font-size:.8rem;white-space:nowrap}
+.req-more .req-btn::after{content:"詳細を見る ▼"}
+.req-more[open] .req-btn::after{content:"閉じる ▲"}
+.req-more[open] .req-short{display:none}
+.req-more[open] summary{order:2}
+.req-more[open]{display:flex;flex-direction:column}
 .card .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.78rem;margin-top:6px}
 .badge{border-radius:6px;padding:1px 8px;background:var(--chip);font-size:.78rem}
 .badge.open{background:var(--ok-soft);color:var(--ok);font-weight:800}
