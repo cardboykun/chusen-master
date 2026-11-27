@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-26T17:30:00+09:00";
+window.SITE_UPDATED = "2026-11-27T09:20:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -1249,6 +1249,30 @@ window.LOTTERIES = [
     ],
     "forms": [],
     "url": "https://x.com/DMM_Myca/status/2121075592338755706",
+    "verified": true
+  },
+  {
+    "id": "dmmmyca-20261127",
+    "store": "DMMマイカ",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-27T07:00:00+09:00",
+    "end": "2026-12-03T23:59:00+09:00",
+    "result": "2026-12-07",
+    "result_how": "メールで確認",
+    "buy_end": "2026-12-14T23:59:00+09:00",
+    "requirement": "会員登録が必要。10/27〜11/26のDMMマイカでの購入金額5,000円ごとに1口（口数は自動で集計）。BOX 6,000円",
+    "note": "応募は1人1回・当選しても購入は1人1点まで。入金確認後、12/7以降に順次発送",
+    "conditions": [
+      "会員登録",
+      "購入実績"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://myca.dmm.com/campaign/k29-4t-8r",
     "verified": true
   },
   {
