@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-27T12:40:00+09:00";
+window.SITE_UPDATED = "2026-11-27T15:05:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -742,6 +742,33 @@ window.LOTTERIES = [
       "set"
     ],
     "url": "https://livepocket.jp/p/hpmzs",
+    "verified": true
+  },
+  {
+    "id": "pokecen-online-20261201",
+    "store": "ポケモンセンターオンライン",
+    "products": [
+      "30th CELEBRATION BOX",
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー",
+      "30th CELEBRATION FUTURISTIC BOX"
+    ],
+    "method": "web",
+    "start": "2026-12-01T14:00:00+09:00",
+    "end": "2026-12-07T16:59:00+09:00",
+    "result": "2026-12-16T15:00:00+09:00",
+    "result_how": "マイページの抽選履歴一覧かメールで確認",
+    "buy_text": "30th BOXは12/16 15時〜12/21 16:59、プレミアムデッキセットは12/16 17時〜12/21 16:59、FUTURISTIC BOXは12/17 15時〜12/22 16:59",
+    "requirement": "ポケモンセンターオンラインの会員が応募できる30周年記念商品の抽選。プレイヤーズクラブで本人認証（マイナンバーカード）を済ませた人の枠と、未認証の人の枠（クレジットカード払いのみ）から1つを選ぶ。1つの抽選につき1人1回。当選発表は30th BOXが12月16日15時以降、プレミアムデッキセットが12月16日17時以降、FUTURISTIC BOXが12月17日15時以降",
+    "note": "本人認証済み枠は、ポケモンセンターオンラインとプレイヤーズクラブの登録メールアドレスがそろっている必要あり。応募期間中はキャンセルできる",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_shrink",
+      "set"
+    ],
+    "url": "https://www.pokemoncenter-online.com/news/?id=20261127",
     "verified": true
   },
   {
