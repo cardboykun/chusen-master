@@ -7,7 +7,7 @@ window.PRODUCTS = [
   { slug: "hadou-seeker", name: "ハドウシーカー", kind: "拡張パック", release: "2026-11-27", price: "1パック200円",
     keys: ["ハドウシーカー"], article: "hadou-seeker", colors: ["#1e3a8a", "#0ea5e9"] },
   { slug: "30th-celebration", name: "30th CELEBRATION", kind: "拡張パック", release: "2026-09-16", price: "1パック360円",
-    keys: ["30th CELEBRATION BOX", "30th CELEBRATION カードセット"], article: null, colors: ["#7c2d12", "#f59e0b"] },
+    keys: ["30th CELEBRATION BOX", "30th CELEBRATION カードセット"], article: "30th-celebration-lottery", colors: ["#7c2d12", "#f59e0b"] },
   { slug: "30th-premium-deck-espeon-umbreon", name: "プレミアムデッキセット エーフィ・ブラッキー", kind: "30th デッキ", release: "2026-09-16", price: "6,200円",
     keys: ["30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"], article: null, colors: ["#312e81", "#c026d3"] },
   { slug: "30th-futuristic-box", name: "FUTURISTIC BOX", kind: "30th 記念BOX", release: "2026-09-16", price: "27,500円",
