@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-27T10:35:00+09:00";
+window.SITE_UPDATED = "2026-11-27T12:40:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -1085,27 +1085,6 @@ window.LOTTERIES = [
     "verified": true
   },
   {
-    "id": "plant-20261117",
-    "store": "PLANT（13店舗）",
-    "products": [
-      "ハドウシーカー"
-    ],
-    "method": "web",
-    "start": "2026-11-17T00:00:00+09:00",
-    "end": "2026-11-19T23:59:00+09:00",
-    "result": "2026-11-23",
-    "result_how": "当選者だけにメールで連絡（11/23〜11/25）",
-    "requirement": "1商品1人1回・当選者は店頭で購入（本人来店・公的証明書で本人確認）・1人30パックまで",
-    "conditions": [
-      "本人確認"
-    ],
-    "forms": [
-      "pack"
-    ],
-    "url": "https://www.plant-co.jp/campaign/detail/1634.html?campaignNo=1634",
-    "verified": true
-  },
-  {
     "id": "shimamura-20261117",
     "store": "しまむら（しまむらパーク）",
     "products": [
@@ -1151,23 +1130,6 @@ window.LOTTERIES = [
       "box_noperi"
     ],
     "url": "https://x.com/ryuunoshippo_4/status/2121951602198093902",
-    "verified": true
-  },
-  {
-    "id": "tcg193-20261113",
-    "store": "TCGショップ193 各店",
-    "products": [
-      "ハドウシーカー"
-    ],
-    "method": "web",
-    "start": "2026-11-13T15:00:00+09:00",
-    "end": "2026-11-19T23:59:00+09:00",
-    "requirement": "10/31までに店頭で入会済みの会員（193NETアカウントは対象外）・1人1BOX・シュリンク／外箱なし",
-    "conditions": [
-      "会員登録"
-    ],
-    "forms": [],
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLScyVCz7XSzFQ8L4EWUXfMzbnjYKd2P3TCOXoAjrp3Wy0Md2ag/viewform",
     "verified": true
   },
   {
@@ -1398,13 +1360,18 @@ window.LOTTERIES = [
     "start": "2026-11-23T10:00:00+09:00",
     "end": "2026-11-29T23:59:00+09:00",
     "result": "2026-12-01",
-    "requirement": "一部の店舗で受付中の抽選（9種セット・1人1個まで）。店頭に貼られたQRコードからLivePocketで、買う店舗を選んで応募する。当選発表は12/1予定・当選した店舗で12/4〜6に購入。対象店舗はお店でご確認ください",
-    "conditions": null,
+    "requirement": "豊橋・とよかわ・荒尾・領家・中島新町・佐鳴台・蒲郡三谷の7店舗から1店舗を選んでLivePocketで応募する再入荷分の抽選（9種セット・1セット10,800円・1人1セット・1人1回）。LivePocketの名前と顔写真付きの身分証の名前を一致させる必要あり。当選発表は12/1予定・当選した店舗で12/4〜12/6に店頭で購入（郵送なし・代理購入不可）",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
     "forms": [
       "set"
     ],
-    "url": null,
-    "verified": false
+    "url": "https://livepocket.jp/e/gw9ru",
+    "verified": true,
+    "buy_start": "2026-12-04",
+    "buy_end": "2026-12-06"
   },
   {
     "id": "trecastation-20261116",
@@ -1510,6 +1477,113 @@ window.LOTTERIES = [
       "box_noshrink"
     ],
     "url": "https://livepocket.jp/e/gfal2",
+    "verified": true
+  },
+  {
+    "id": "kanabell-20261127",
+    "store": "カーナベル（通販・まとめ買取の申込者向け）",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": null,
+    "end": "2026-11-27T23:59:00+09:00",
+    "result": "2026-11-30",
+    "result_how": "メールとXで発表",
+    "requirement": "カーナベルの会員が、ポケカのまとめ買取（1,000枚以上）に「事前見積りを希望する」で申し込み、カードを実際に送ると応募になる抽選（1BOX 6,000円・1人1申込）。11/27 23:59の申込分まで、先着100件に達したら終了。購入方法・発送は当選メールで案内",
+    "conditions": [
+      "会員登録",
+      "その他"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://www.ka-nabell.com/ec/sell/pokemon/topics/rv4711onx",
+    "verified": true
+  },
+  {
+    "id": "tsutaya-stores-20260919-premiumdeck",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "30th CELEBRATION プレミアムデッキセット エーフィ・ブラッキー"
+    ],
+    "method": "web",
+    "start": "2026-11-27T10:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-12-01",
+    "buy_start": "2026-12-04",
+    "buy_end": "2026-12-06",
+    "requirement": "TSUTAYA Trading Card 松戸（千葉・テラスモール松戸）でLivePocketの抽選を受付中（1人1個・1人1回）。店の公式Xのフォローが必要な場合あり、購入時に顔写真付きの運転免許証かマイナンバーカードで本人確認。当選者は12/4〜12/6に店頭で購入（発送なし・封入テープはカットして販売）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "SNS",
+      "本人確認"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://livepocket.jp/e/zr53_",
+    "verified": true,
+    "branches": [
+      {
+        "name": "TSUTAYA Trading Card 松戸",
+        "end": "2026-11-29T23:59:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/zr53_"
+      }
+    ]
+  },
+  {
+    "id": "furuichi-stores-20260916-cardset",
+    "store": "古本市場 各店（店ごとの抽選）",
+    "products": [
+      "30th CELEBRATION カードセット"
+    ],
+    "method": "web",
+    "start": "2026-11-26T10:00:00+09:00",
+    "end": "2026-11-28T22:00:00+09:00",
+    "result": "2026-11-29",
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-07",
+    "requirement": "野口店（兵庫）でLivePocketの抽選を受付中（9種それぞれ1,200円・各1回まで）。本人確認は現住所が書かれた顔写真付きの身分証など決められた書類だけで、登録情報と一致が必要。当選発表は11/29〜12/2、当選者は12/5〜12/7に店頭で購入（代理購入不可）。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "set"
+    ],
+    "url": "https://livepocket.jp/e/limnc",
+    "verified": true,
+    "branches": [
+      {
+        "name": "野口店",
+        "end": "2026-11-28T22:00:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/limnc"
+      }
+    ]
+  },
+  {
+    "id": "fukufukutoreka-20261123",
+    "store": "福福トレカ 通販店",
+    "products": [
+      "ロケット団の栄光"
+    ],
+    "method": "web",
+    "start": "2026-11-23T00:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-11-30",
+    "buy_end": "2026-12-03T23:59:00+09:00",
+    "requirement": "通販店の会員ログインが必要で、購入履歴が1回以上ある人が対象（初めての人は最初の注文の発送後から参加可）。1BOXの抽選販売で、ほかの商品との同時購入は不可。同じ住所・同じ名義の重複注文はキャンセル。当選後は12/3 23:59までに購入",
+    "conditions": [
+      "会員登録",
+      "購入実績"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://pokemon.fukufukutoreka.com/lottery/31",
     "verified": true
   }
 ];
