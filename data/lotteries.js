@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-27T10:05:00+09:00";
+window.SITE_UPDATED = "2026-11-27T10:35:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -1460,6 +1460,56 @@ window.LOTTERIES = [
       "box_shrink"
     ],
     "url": "https://www.amazon.co.jp/dp/B0H4PQ6LR5",
+    "verified": true
+  },
+  {
+    "id": "shibuyatsutaya-20261127",
+    "store": "SHIBUYA TSUTAYA（POKÉMON CARD LOUNGE）",
+    "products": [
+      "30th CELEBRATION BOX"
+    ],
+    "method": "web",
+    "start": "2026-11-27T10:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-12-08T18:00:00+09:00",
+    "result_how": "CLOUD PASSからメールで連絡（マイページでも確認できる）",
+    "buy_start": "2026-12-15",
+    "buy_end": "2026-12-20",
+    "requirement": "CLOUD PASSで受取日を選んで応募（1人1BOX・1回まで）。申込時に顔写真付き本人確認書類の登録が必要。受け取りは12/15〜12/20に5階のカードラウンジで、支払いはキャッシュレスのみ",
+    "note": "配送なし・指定日に来店して受け取り",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://cloud-pass.jp/pr/98e6a804c482ebeb4e329c49224a346767bc80eb5e4ca4372d5960292993347b",
+    "verified": true
+  },
+  {
+    "id": "kiddyland-urawamisono-20261127",
+    "store": "キデイランド 浦和美園店",
+    "products": [
+      "ハドウシーカー",
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": "2026-11-27T10:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "result": "2026-12-03T18:00:00+09:00",
+    "result_how": "LivePocketからメールで連絡",
+    "buy_start": "2026-12-04",
+    "buy_end": "2026-12-06",
+    "requirement": "LivePocket（無料の会員登録、本名・正しい生年月日で）で商品ごとに1人1回応募。当選すると1BOX（30パック）を購入でき、受け取りは12/4〜12/6に店頭レジで。本人確認書類が必要で、代理・同伴者の購入は不可。BOXはシュリンクを外して渡される",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink"
+    ],
+    "url": "https://livepocket.jp/e/gfal2",
     "verified": true
   }
 ];
