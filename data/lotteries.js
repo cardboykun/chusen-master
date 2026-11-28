@@ -8,7 +8,7 @@
 // result: 当選発表日（任意）。日付だけなら "2026-11-27"、時刻もわかれば "2026-11-27T18:00:00+09:00"。不明なら書かない
 // result_how: 結果の確認方法（任意）。例「当選者だけにメールで連絡」。不明なら書かない
 // forms: 販売形態。[] = 不明。値は box_shrink / box_noshrink / box_noperi / pack / set
-window.SITE_UPDATED = "2026-11-27T15:05:00+09:00";
+window.SITE_UPDATED = "2026-11-28T12:40:00+09:00";
 window.LOTTERIES = [
   {
     "id": "tsutaya-stores-20261127",
@@ -50,9 +50,49 @@ window.LOTTERIES = [
     ],
     "method": "web",
     "start": "2026-11-24T10:00:00+09:00",
-    "end": "2026-11-27T23:59:00+09:00",
-    "result": "2026-11-28",
-    "requirement": "北習志野駅前店（千葉・11/26 23:59締切）と神明店（福井・11/27 23:59締切）でLivePocketの抽選を受付中（1BOX 7,200円）。北習志野駅前店は店頭で配るシリアルコードが必要、神明店はVポイントカードとマイナンバーカードが必要。どちらも当選発表は11/28予定で、店頭受け取りのみ・シュリンクは開けて渡し。購入は北習志野駅前店が11/30〜12/1、神明店が12/1〜12/3。応募方法・条件は各店の告知で確認してください",
+    "end": "2026-11-29T23:00:00+09:00",
+    "requirement": "佐野店（栃木・11/29 23時締切）でLivePocketの抽選を受付中（1人1BOX・申込に店頭で配るシリアルコードが必要。当落メールは12/1〜12/20、購入は12/26〜12/27に店頭で。シュリンク・テープ・ペリペリは外して販売）。北習志野駅前店（千葉）・神明店（福井）の抽選は締切済み。締切は店ごとに違います。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink",
+      "box_noperi"
+    ],
+    "url": "https://livepocket.jp/e/merhm",
+    "verified": true,
+    "branches": [
+      {
+        "name": "北習志野駅前店",
+        "end": "2026-11-26T23:59:00+09:00",
+        "how": "LivePocket（店頭でシリアルコード）",
+        "url": "https://livepocket.jp/e/merhm"
+      },
+      {
+        "name": "神明店",
+        "end": "2026-11-27T23:59:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/on7tx"
+      },
+      {
+        "name": "佐野店",
+        "end": "2026-11-29T23:00:00+09:00",
+        "how": "LivePocket（店頭でシリアルコード）",
+        "url": "https://livepocket.jp/e/777p3"
+      }
+    ]
+  },
+  {
+    "id": "tsutaya-stores-20260731",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": "2026-11-24T10:00:00+09:00",
+    "end": "2026-11-29T23:59:00+09:00",
+    "requirement": "土佐道路店（高知・11/29 23:59締切）でLivePocketの抽選を受付中（1BOX 6,000円・1人1回・高知県在住の人だけ）。Vカードと、運転免許証かマイナンバーカードでの本人確認が必要。当選発表は11/30、購入は12/5〜12/6に店頭で（発送なし）。北習志野駅前店（千葉）の抽選は締切済み。締切は店ごとに違います。応募方法・条件は各店の告知で確認してください",
     "conditions": [
       "会員登録",
       "本人確認"
@@ -70,41 +110,10 @@ window.LOTTERIES = [
         "url": "https://livepocket.jp/e/merhm"
       },
       {
-        "name": "神明店",
-        "end": "2026-11-27T23:59:00+09:00",
-        "how": "LivePocket",
-        "url": "https://livepocket.jp/e/on7tx"
-      }
-    ]
-  },
-  {
-    "id": "tsutaya-stores-20260731",
-    "store": "TSUTAYA 各店（店ごとの抽選）",
-    "products": [
-      "ストームエメラルダ"
-    ],
-    "method": "web",
-    "start": "2026-11-24T10:00:00+09:00",
-    "end": "2026-11-26T23:59:00+09:00",
-    "result": "2026-11-28",
-    "buy_start": "2026-11-30",
-    "buy_end": "2026-12-01",
-    "requirement": "北習志野駅前店（千葉）でLivePocketの抽選を受付中（1BOX 6,000円・1人1BOX・11/26 23:59締切）。店頭で毎日10時〜20時30分に配るシリアルコードが必要で、顔写真付きの公的な身分証で本人確認あり。当選者は11/30〜12/1に店頭で購入（郵送なし・シュリンクとミシン目は開けて渡し）。応募方法・条件は各店の告知で確認してください",
-    "conditions": [
-      "会員登録",
-      "本人確認"
-    ],
-    "forms": [
-      "box_noshrink"
-    ],
-    "url": "https://livepocket.jp/e/merhm",
-    "verified": true,
-    "branches": [
-      {
-        "name": "北習志野駅前店",
-        "end": "2026-11-26T23:59:00+09:00",
-        "how": "LivePocket（店頭でシリアルコード）",
-        "url": "https://livepocket.jp/e/merhm"
+        "name": "土佐道路店",
+        "end": "2026-11-29T23:59:00+09:00",
+        "how": "LivePocket（高知県在住・Vカード必須）",
+        "url": "https://livepocket.jp/e/7xufw"
       }
     ]
   },
@@ -1138,28 +1147,6 @@ window.LOTTERIES = [
     "verified": true
   },
   {
-    "id": "ryuunoshippo-20261115",
-    "store": "竜のしっぽ 各店",
-    "products": [
-      "ハドウシーカー",
-      "30th CELEBRATION カードセット"
-    ],
-    "method": "web",
-    "start": "2026-11-15T22:00:00+09:00",
-    "end": "2026-11-20T23:59:00+09:00",
-    "result_how": "当選者だけにメールで連絡",
-    "requirement": "竜のしっぽモバイル会員サイトから応募・当選者のみメール連絡（例：姫路店の告知）",
-    "conditions": [
-      "会員登録"
-    ],
-    "forms": [
-      "box_noshrink",
-      "box_noperi"
-    ],
-    "url": "https://x.com/ryuunoshippo_4/status/2121951602198093902",
-    "verified": true
-  },
-  {
     "id": "surugaya-20261105",
     "store": "駿河屋",
     "products": [
@@ -1239,24 +1226,6 @@ window.LOTTERIES = [
     "url": "https://www.pokemoncenter-online.com/news/?id=20260929",
     "verified": true,
     "tentative": true
-  },
-  {
-    "id": "dmmmyca-20261113",
-    "store": "DMMマイカ",
-    "products": [
-      "スペシャルデッキセットMEGA"
-    ],
-    "method": "web",
-    "start": "2026-11-13T12:00:00+09:00",
-    "end": "2026-11-20T23:59:00+09:00",
-    "requirement": "10/13〜11/12の購入5,000円ごとに1口・当選者のみメール連絡（締切時刻は応募ページで確認）",
-    "conditions": [
-      "会員登録",
-      "購入実績"
-    ],
-    "forms": [],
-    "url": "https://x.com/DMM_Myca/status/2121075592338755706",
-    "verified": true
   },
   {
     "id": "dmmmyca-20261127",
@@ -1339,25 +1308,6 @@ window.LOTTERIES = [
     ],
     "url": "https://www.lawson.co.jp/lab/entertainment/art/20261117_toypokemon.html",
     "verified": true
-  },
-  {
-    "id": "kojima-20261113",
-    "store": "コジマ（アプリ）",
-    "products": [
-      "ハドウシーカー"
-    ],
-    "method": "app",
-    "start": "2026-11-13T21:00:00+09:00",
-    "end": "2026-11-20T23:59:00+09:00",
-    "requirement": "コジマアプリから応募・2025/11/1〜2026/11/20 にコジマで税込5,000円以上の購入・1人1BOX・当選者は登録店舗で購入",
-    "conditions": [
-      "会員登録",
-      "アプリ",
-      "購入実績"
-    ],
-    "forms": [],
-    "url": "https://www.kojima.net/shop/app/kojima_appli.html",
-    "verified": false
   },
   {
     "id": "corocoro-20261113",
@@ -1566,10 +1516,9 @@ window.LOTTERIES = [
     "method": "web",
     "start": "2026-11-27T10:00:00+09:00",
     "end": "2026-11-29T23:59:00+09:00",
-    "result": "2026-12-01",
     "buy_start": "2026-12-04",
     "buy_end": "2026-12-06",
-    "requirement": "TSUTAYA Trading Card 松戸（千葉・テラスモール松戸）でLivePocketの抽選を受付中（1人1個・1人1回）。店の公式Xのフォローが必要な場合あり、購入時に顔写真付きの運転免許証かマイナンバーカードで本人確認。当選者は12/4〜12/6に店頭で購入（発送なし・封入テープはカットして販売）。応募方法・条件は各店の告知で確認してください",
+    "requirement": "TSUTAYA Trading Card 松戸（千葉・テラスモール松戸。11/29 23:59締切・当選発表12/1）と金沢店（石川・11/29 22時締切・当選発表11/30）でLivePocketの抽選を受付中（どちらも1人1回）。松戸は店の公式Xのフォローが必要な場合あり。どちらも購入時に顔写真付きの身分証で本人確認があり、当選者は12/4〜12/6に店頭で購入（発送なし）。応募方法・条件は各店の告知で確認してください",
     "conditions": [
       "会員登録",
       "SNS",
@@ -1586,6 +1535,12 @@ window.LOTTERIES = [
         "end": "2026-11-29T23:59:00+09:00",
         "how": "LivePocket",
         "url": "https://livepocket.jp/e/zr53_"
+      },
+      {
+        "name": "金沢店",
+        "end": "2026-11-29T22:00:00+09:00",
+        "how": "LivePocket",
+        "url": "https://livepocket.jp/e/o0-mw"
       }
     ]
   },
@@ -1641,5 +1596,60 @@ window.LOTTERIES = [
     ],
     "url": "https://pokemon.fukufukutoreka.com/lottery/31",
     "verified": true
+  },
+  {
+    "id": "pao-20261128",
+    "store": "PAO・竜星のPAO 各店",
+    "products": [
+      "ハドウシーカー"
+    ],
+    "method": "web",
+    "start": "2026-11-28T11:50:00+09:00",
+    "end": "2026-11-30T23:59:00+09:00",
+    "result": "2026-12-08",
+    "buy_start": "2026-12-12",
+    "buy_end": "2026-12-14",
+    "requirement": "PAO青梅・堀之内、竜星のPAO八王子・立川・町田・中野・大宮・千葉中央・横浜・多摩境・池袋・秋葉原ロケット無線の12店舗から1店舗だけ選んでLivePocketで応募する抽選（1BOX 6,000円・1人1回。2店舗以上に応募すると全部無効）。応募が上限に達すると早めに締め切られることがあります。当選者は12/12〜12/14に選んだ店舗で、顔写真付きの身分証を持って本人が購入（発送なし・代理不可）",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_shrink"
+    ],
+    "url": "https://livepocket.jp/e/pdrhv",
+    "verified": true
+  },
+  {
+    "id": "tsutaya-stores-20261127-megasymphonia",
+    "store": "TSUTAYA 各店（店ごとの抽選）",
+    "products": [
+      "メガシンフォニア"
+    ],
+    "method": "store",
+    "start": "2026-11-27T08:00:00+09:00",
+    "end": "2026-11-29T23:00:00+09:00",
+    "result": "2026-12-01",
+    "buy_start": "2026-12-04",
+    "buy_end": "2026-12-06",
+    "requirement": "TSUTAYA Trading Card 伊勢丘（広島）で抽選を受付中（1箱30パック 5,400円・1人1箱）。店頭でスタッフに声をかけ、その場でQRコードからLivePocketに応募して抽選券を受け取る形。LivePocketは本名で登録が必要で、購入時に顔写真付きの身分証と抽選券が必要。シュリンクとペリペリははがして販売。応募方法・条件は各店の告知で確認してください",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "box_noshrink",
+      "box_noperi"
+    ],
+    "url": "https://livepocket.jp/e/icdne",
+    "verified": true,
+    "branches": [
+      {
+        "name": "TSUTAYA Trading Card 伊勢丘",
+        "end": "2026-11-29T23:00:00+09:00",
+        "how": "店頭でQRから応募（抽選券）",
+        "url": "https://livepocket.jp/e/icdne"
+      }
+    ]
   }
 ];
