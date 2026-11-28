@@ -1482,6 +1482,35 @@ window.LOTTERIES = [
     "verified": true
   },
   {
+    "id": "kiddyland-fujimi-20261128",
+    "store": "キデイランド ららぽーと富士見店",
+    "products": [
+      "スターターデッキ＆ビルドセット 未来のミライドンex",
+      "スターターデッキ＆ビルドセット 古代のコライドンex",
+      "30th CELEBRATION カードセット",
+      "ストームエメラルダ"
+    ],
+    "method": "web",
+    "start": "2026-11-28T10:00:00+09:00",
+    "end": "2026-11-30T23:59:00+09:00",
+    "result": "2026-12-04T18:00:00+09:00",
+    "result_how": "LivePocketからメールで連絡",
+    "buy_start": "2026-12-05",
+    "buy_end": "2026-12-07",
+    "requirement": "LivePocket（無料の会員登録、本名・正しい生年月日で）で商品ごとに1人1回応募。当選するとデッキ＆ビルドセットは各1点、30th カードセットは9種を各1点、ストームエメラルダは1BOX（30パック）まで購入できる。受け取りは12/5〜12/7に店頭レジで、本人確認書類と当選のQRコードが必要。代理・同伴者の購入は不可。BOXはシュリンクを外して渡される",
+    "conditions": [
+      "会員登録",
+      "本人確認"
+    ],
+    "forms": [
+      "set",
+      "box_noshrink"
+    ],
+    "note": "応募ページは商品ごとに分かれています（店の案内から商品を選んで応募）",
+    "url": "https://livepocket.jp/e/3e_xj",
+    "verified": true
+  },
+  {
     "id": "kiddyland-urawamisono-20261127",
     "store": "キデイランド 浦和美園店",
     "products": [
